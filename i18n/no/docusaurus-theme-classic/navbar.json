@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "SP",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "SP-logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "Veiledning",
+    "description": "Navbar item with label Tutorial"
+  }
+}

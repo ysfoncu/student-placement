@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Nästa",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Settings": {
+    "message": "Inställningar",
+    "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Quota Request": {
+    "message": "Kvotförfrågan",
+    "description": "The label for category 'Quota Request' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Student Placement": {
+    "message": "Studentplacering",
+    "description": "The label for category 'Student Placement' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Custom workflows": {
+    "message": "Anpassade arbetsflöden",
+    "description": "The label for category 'Custom workflows' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Reports": {
+    "message": "Rapporter",
+    "description": "The label for category 'Reports' in sidebar 'tutorialSidebar'"
+  }
+}

@@ -1,0 +1,12 @@
+.about {
+  padding: 3rem 0;
+  width: 100%;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}

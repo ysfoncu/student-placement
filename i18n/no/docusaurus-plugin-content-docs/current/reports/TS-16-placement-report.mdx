@@ -1,0 +1,110 @@
+---
+title: '16 · Rapporter - Plasseringsrapport'
+sidebar_label: '16 · Rapporter - Plasseringsrapport'
+sidebar_position: 16
+---
+
+# Rapporter - Plasseringsrapport
+
+:::info[Scenariooversikt]
+
+- **Side:** Reports → Placement rapport
+- **Rolle:** Praksiskoordinator (PK)
+- **Mål:** Bla gjennom plasseringer, velg én eller flere for å se importerte studenter og kvoteforbruk på praksissteder side om side, avgrens listen med filtre, og utvid et utvalg til full bredde.
+- **Forutsetning:** Innlogget som PK, med plasseringer som har importerte studenter og tilknyttede praksissteder. Denne gjennomgangen bruker de eksisterende plasseringene **SP101b** og **FY101, Fysioterapi Bachelor**.
+
+:::
+
+## Hva denne siden er
+
+**Placement rapport** er den tredje oppføringen under **Reports** i sidemenyen (ved siden av **Invoicing**, **Student rapport** og **Capacity report**). I motsetning til Student rapport er dette en visning med **flervalg**: huk av så mange plasseringer du vil til venstre, og hver av dem får sin egen seksjon stablet i detaljpanelet til høyre — slik at du kan sammenligne flere plasseringer samtidig i stedet for én om gangen.
+
+Filterlinjen avgrenser plasseringslisten på **Study / Program** (en kaskaderende meny — velg et studium, deretter eventuelt et av programmene), **Emne**, **Status** (Draft, Upload students, Select praksis places, First publish, Completed) og **Period**; et søkefelt matcher også på tittel, emne eller semester. Hvert plasseringskort i listen viser tittel, statusmerke, semester/emne og antall importerte studenter, med **Select all** / **Clear all** over listen. For hver avhukede plassering viser detaljpanelet en oppsummeringsrad (Year, Semester, Emne, Start-/sluttdato, Imported students, Not attached) etterfulgt av en **Praksis places**-tabell — én rad per tilknyttet entitet, med **Quota status**, **Requested**, **Approved**, **Consumed** og **Available**, samt en **Total**-rad — eller en tom-tilstand-melding hvis ingen praksissteder er tilknyttet ennå. En **Expand**-knapp øverst til høyre i detaljpanelet skjuler plasseringslisten og verktøylinjen, slik at utvalget kan gjennomgås i full bredde; **Collapse** gjenoppretter delt visning.
+
+Som standard er rapporten avgrenset til inneværende og neste semester — plasseringslisten viser derfor kun plasseringer med datoer innenfor dette tidsrommet. Bruk **Period**-filteret for å utvide, endre eller fjerne denne avgrensningen og få med andre plasseringer, inkludert tidligere semestre.
+
+---
+
+## Trinn
+
+### 1. Start på Dashboard
+
+Etter innlogging kommer du til **Dashboard**.
+
+<figure>
+
+![Dashboard — startpunkt](./img/TS-16-placement-report/01-dashboard.png)
+
+<figcaption>Startpunkt — Dashboard</figcaption>
+
+</figure>
+
+### 2. Åpne Reports → Placement rapport
+
+Klikk på **Reports** i sidemenyen for å utvide den, og klikk deretter på **Placement rapport**. Siden åpnes med filterlinjen og en avkrysningsliste over plasseringer til venstre; ingenting er valgt ennå, så høyre panel viser *"Select one or more placements."*
+
+<figure>
+
+![Plasseringsrapport-oversikt med plasseringslisten](./img/TS-16-placement-report/02-placement-report-overview.png)
+
+<figcaption>Placement rapport — plasseringsliste og filterlinje, ingenting valgt</figcaption>
+
+</figure>
+
+### 3. Velg én plassering
+
+Huk av en plassering i listen — her **SP101b**. Seksjonen lastes til høyre: oppsummeringsraden (**3** importerte studenter, **0** ikke tilknyttet) etterfulgt av **Praksis places (4)** med tall for forespurt/godkjent/forbrukt/tilgjengelig per entitet og en **Total**-rad (200 godkjent, 3 forbrukt, 197 tilgjengelig).
+
+<figure>
+
+![Én plassering valgt viser detaljtabellen](./img/TS-16-placement-report/03-single-selected.png)
+
+<figcaption>SP101b valgt — plasseringsoppsummering og kvotetabell for praksissteder</figcaption>
+
+</figure>
+
+### 4. Velg en plassering til for sammenligning
+
+Huk av en plassering til — her **FY101, Fysioterapi Bachelor** — mens SP101b fortsatt er avhuket. Seksjonen legges til over SP101b sin i detaljpanelet, slik at begge plasseringenes kvotetabeller vises sammen for sammenligning.
+
+<figure>
+
+![To plasseringer valgt, seksjoner stablet](./img/TS-16-placement-report/04-multi-selected.png)
+
+<figcaption>FY101 og SP101b begge valgt — seksjonene deres stables i detaljpanelet</figcaption>
+
+</figure>
+
+### 5. Filtrer på Study / Program
+
+Fjern utvalget, klikk på **Study / Program**, og velg et studium — her **Helse-, sosial og idrettsfag** — og deretter et program, for eksempel **Bachelor fysioterapi**. Knappeteksten oppdateres, en **Clear filters**-lenke vises, og plasseringslisten avgrenses (her til **1 placement**). Samme mønster gjelder for **Emne**, **Status** og **Period**.
+
+<figure>
+
+![Study/Program-filter avgrenser plasseringslisten](./img/TS-16-placement-report/05-program-filter.png)
+
+<figcaption>Study / Program-filter — avgrenset til Helse-, sosial og idrettsfag / Bachelor fysioterapi</figcaption>
+
+</figure>
+
+### 6. Utvid til full bredde
+
+Fjern filteret, velg en plassering, og klikk deretter på **Expand** (øverst til høyre i detaljpanelet). Plasseringslisten og verktøylinjen skjules, og de(n) valgte seksjonen(e) fyller full bredde, noe som gjør brede kvotetabeller enklere å lese. Klikk på **Collapse** for å gå tilbake til delt visning.
+
+<figure>
+
+![Utvidet plasseringsdetalj i full bredde](./img/TS-16-placement-report/06-expanded.png)
+
+<figcaption>Utvidet visning — SP101b sin oppsummering og kvotetabell for praksissteder i full bredde</figcaption>
+
+</figure>
+
+---
+
+## Sluttresultat
+
+Koordinatoren kan huke av en hvilken som helst kombinasjon av plasseringer og se antall importerte studenter og kvoteforbruk på praksissteder side om side — avgrenset til relevant studium, program, emne, status eller periode, og utvidet til full bredde for en nærmere titt.
+
+---
+
+<ScenarioFeedback scenarioId="TS-16-placement-report" />

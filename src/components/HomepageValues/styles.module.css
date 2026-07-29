@@ -1,0 +1,20 @@
+.values {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.valueEmoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary-lightest);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+[data-theme='dark'] .valueEmoji {
+  background: var(--ifm-color-primary-darkest);
+}
