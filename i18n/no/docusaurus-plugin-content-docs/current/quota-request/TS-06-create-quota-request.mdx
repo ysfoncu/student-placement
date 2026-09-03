@@ -8,7 +8,7 @@ sidebar_position: 6
 
 :::info[Scenariooversikt]
 
-- **Side:** Capacity planning
+- **Side:** Kapasitetsplanlegging
 - **Rolle:** Praksiskoordinator (PK)
 - **Mål:** Opprett en ny kvoteforespørsel fra en tom starttilstand, og bekreft at den vises i forespørselslisten.
 - **Forutsetning:** Innlogget som koordinator. Ingen kvoteforespørsler finnes ennå (tomt miljø).
@@ -17,50 +17,50 @@ sidebar_position: 6
 
 ## Hva denne siden er
 
-**Capacity planning** er der koordinatoren ber praksissteder (sykehus/klinikker)
- om studentkapasitet. Listen **Quota Requests** holder oversikt over hver forespørsel du sender og statusen dens
- (`Pending → Approved/Rejected → Fulfilled`). Du starter en ny forespørsel med knappen
- **Request Quota** (øverst til høyre).
+**Kapasitetsplanlegging** er der koordinatoren ber praksissteder (sykehus/klinikker)
+ om studentkapasitet. Listen **Kvoteforespørsler** holder oversikt over hver forespørsel du sender og statusen dens
+ (`Venter → Godkjent/Avslått → Oppfylt`). Du starter en ny forespørsel med knappen
+ **Be om kvote** (øverst til høyre).
 
 ---
 
 ## Trinn
 
-### 1. Start på Dashboard
+### 1. Start på Dashbord
 
-Etter innlogging kommer du til **Dashboard**. Widgeten **Quota Requests** viser
- *"No quota requests found"* — miljøet er tomt og klart for scenarioet.
-
-<figure>
-
-![Dashboard — startpunkt](./img/TS-06-create-quota-request/01-dashboard.png)
-
-<figcaption>Startpunkt — Dashboard</figcaption>
-
-</figure>
-
-### 2. Åpne Capacity planning fra sidemenyen
-
-Klikk på **Capacity planning** i sidemenyen til venstre. Siden åpnes med en tom liste:
- *"No quota requests yet — Click 'Request Quota' to create your first request."*
+Etter innlogging kommer du til **Dashbord**. Widgeten **Kvoteforespørsler** viser
+ *"Ingen kvoteforespørsler funnet"* — miljøet er tomt og klart for scenarioet.
 
 <figure>
 
-![Tom Capacity planning-side](./img/TS-06-create-quota-request/02-capacity-empty.png)
+![Dashbord — startpunkt](./img/TS-06-create-quota-request/01-dashboard.png)
 
-<figcaption>Capacity planning — tom starttilstand (etter klikk i sidemenyen)</figcaption>
+<figcaption>Startpunkt — Dashbord</figcaption>
 
 </figure>
 
-### 3. Trinn 1 i veiviseren — Request Details
+### 2. Åpne Kapasitetsplanlegging fra sidemenyen
 
-Klikk på **Request Quota** (øverst til høyre) for å åpne veiviseren med tre trinn. Obligatoriske felter er merket med `*`.
+Klikk på **Kapasitetsplanlegging** i sidemenyen til venstre. Siden åpnes med en tom liste:
+ *"Ingen kvoteforespørsler ennå — klikk på «Be om kvote» for å opprette din første forespørsel."*
 
-1.  Velg et **Praksis Place** (f.eks. *Oslo University Hospital HF*).
-2.  Velg en **Start Date** og en **End Date** *(sluttdatoen må være etter startdatoen)*.
-3.  Velg et **Study**, deretter et **Program** (programvalgene avhenger av studiet).
+<figure>
+
+![Tom Kapasitetsplanlegging-side](./img/TS-06-create-quota-request/02-capacity-empty.png)
+
+<figcaption>Kapasitetsplanlegging — tom starttilstand (etter klikk i sidemenyen)</figcaption>
+
+</figure>
+
+### 3. Trinn 1 i veiviseren — Forespørselsdetaljer
+
+Klikk på **Be om kvote** (øverst til høyre) for å åpne veiviseren med tre trinn. Obligatoriske felter er merket med `*`.
+
+1.  Velg et **Praksissted** (f.eks. *Oslo University Hospital HF*).
+2.  Velg en **Startdato** og en **Sluttdato** *(sluttdatoen må være etter startdatoen)*.
+3.  Velg et **Studium**, deretter et **Program** (programvalgene avhenger av studiet).
 4.  Skriv eventuelt inn et **Emne** (emne-/fagnavn).
-5.  Klikk på **Next**.
+5.  Klikk på **Neste**.
 
 <figure>
 
@@ -72,9 +72,9 @@ Klikk på **Request Quota** (øverst til høyre) for å åpne veiviseren med tre
 
 ### 4. Trinn 2 i veiviseren — Entity Distribution
 
-6.  I treet **Add Entities** angir du en kvote og klikker på den blå **+** ved siden av en avdeling.
-7.  Legg til minst én enhet; enheter som er lagt til, vises til høyre med en løpende **Total Requested Quota**.
-8.  Klikk på **Next**.
+6.  I treet **Legg til enheter** angir du en kvote og klikker på den blå **+** ved siden av en avdeling.
+7.  Legg til minst én enhet; enheter som er lagt til, vises til høyre med en løpende **Total forespurt kvote**.
+8.  Klikk på **Neste**.
 
 <figure>
 
@@ -84,11 +84,11 @@ Klikk på **Request Quota** (øverst til høyre) for å åpne veiviseren med tre
 
 </figure>
 
-### 5. Trinn 3 i veiviseren — Summary & Notes
+### 5. Trinn 3 i veiviseren — Sammendrag og merknader
 
-9.  Gå gjennom **Request Summary**.
-10.  Legg eventuelt til **Notes** til kontaktpersonen ved praksisstedet.
-11.  Klikk på **Submit Request**.
+9.  Gå gjennom **Sammendrag av forespørsel**.
+10.  Legg eventuelt til **Merknader** til kontaktpersonen ved praksisstedet.
+11.  Klikk på **Send inn forespørsel**.
 
 <figure>
 
@@ -102,9 +102,9 @@ Klikk på **Request Quota** (øverst til høyre) for å åpne veiviseren med tre
 
 ## Sluttresultat
 
-En *"Quota request submitted successfully"*-melding (toast) vises, og den nye forespørselen vises i
- listen **Quota Requests** med status Pending. Kapasiteten gjenspeiles også
- i seksjonen **Available Quotas** øverst.
+En *"Kvoteforespørselen ble sendt inn"*-melding (toast) vises, og den nye forespørselen vises i
+ listen **Kvoteforespørsler** med status Venter. Kapasiteten gjenspeiles også
+ i seksjonen **Tilgjengelige kvoter** øverst.
 
 <figure>
 

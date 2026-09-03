@@ -1,96 +1,96 @@
 ---
-title: '09 · Studentplassering - Opprett'
-sidebar_label: '09 · Studentplassering - Opprett'
+title: '09 · Student plassering - Opprett'
+sidebar_label: '09 · Student plassering - Opprett'
 sidebar_position: 9
 ---
 
-# Testscenario 09 — Studentplassering - Opprett
+# Testscenario 09 — Student plassering - Opprett
 
 :::info[Scenariooversikt]
 
-- **Side:** Student placement → New Student Placement
+- **Side:** Student plassering → Ny student plassering
 - **Rolle:** Praksiskoordinator (PK)
 - **Mål:** Opprett en studentplassering fra en **godkjent kvoteforespørsel**, slik at plasseringen er koblet til forespørselen fra starten av.
-- **Forutsetning:** Minst én godkjent kvoteforespørsel med ledig kapasitet finnes (opprettet via Capacity planning). Plasseringsskjemaet fylles ikke lenger ut manuelt — detaljene kommer fra forespørselen du velger.
+- **Forutsetning:** Minst én godkjent kvoteforespørsel med ledig kapasitet finnes (opprettet via Kapasitetsplanlegging). Plasseringsskjemaet fylles ikke lenger ut manuelt — detaljene kommer fra forespørselen du velger.
 
 :::
 
 ## Hva denne siden er
 
-**Student placement** viser alle plasseringer for programmene dine. Øverst finnes filtre (**Study / Program**, **emne**, **status** og en **Period**-velger — de aktive periodene vises som fjernbare chips, f.eks. *This Semester · Jan 1, 2026 – Aug 1, 2026*). **View by**-bryteren veksler mellom to visninger:
+**Student plassering** viser alle plasseringer for programmene dine. Øverst finnes filtre (**Studium / program**, **emne**, **status** og en **Periode**-velger — de aktive periodene vises som fjernbare chips, f.eks. *This Semester · Jan 1, 2026 – Aug 1, 2026*). **Vis etter**-bryteren veksler mellom to visninger:
 
-- **Tabellvisning** — én rad per plassering med Study/Program, Title, Year, Semester, Emne, antall Students, Start–End date, Status og Pending steps, pluss paginering.
-- **Kalendervisning** — en tidslinje over måneder (f.eks. *June 2026 – December 2026*, "Showing 7 months") der hver plassering tegnes som en horisontal stolpe over start–sluttdatoene sine, merket med datointervall og antall studenter. Pilene flytter det synlige vinduet, og **Reset to Default** gjenoppretter det.
+- **Tabellvisning** — én rad per plassering med Studium/program, Tittel, År, Semester, Emne, antall Studenter, Start–sluttdato, Status og Ventende trinn, pluss paginering.
+- **Kalendervisning** — en tidslinje over måneder (f.eks. *June 2026 – December 2026*, "Showing 7 months") der hver plassering tegnes som en horisontal stolpe over start–sluttdatoene sine, merket med datointervall og antall studenter. Pilene flytter det synlige vinduet, og **Tilbakestill til standard** gjenoppretter det.
 
 ---
 
 ## Trinn
 
-### 1. Start på Dashboard
+### 1. Start på Dashbord
 
 <figure>
 
-![Dashboard](./img/TS-09-create-placement/01-dashboard.png)
+![Dashbord](./img/TS-09-create-placement/01-dashboard.png)
 
-<figcaption>Startpunkt — Dashboard</figcaption>
+<figcaption>Startpunkt — Dashbord</figcaption>
 
 </figure>
 
-### 2. Åpne Student placement
+### 2. Åpne Student plassering
 
-Klikk på **Student placement** i sidemenyen. Listen åpnes i visningen du brukte sist — her **tabellvisningen**.
+Klikk på **Student plassering** i sidemenyen. Listen åpnes i visningen du brukte sist — her **tabellvisningen**.
 
 <figure>
 
 ![Studentplasseringer — tabellvisning](./img/TS-09-create-placement/02-placements-table.png)
 
-<figcaption>Student placement — tabellvisning med filtre og periode-chips</figcaption>
+<figcaption>Student plassering — tabellvisning med filtre og periode-chips</figcaption>
 
 </figure>
 
-Bytter du **View by** til kalenderen, vises de samme plasseringene som stolper på en månedstidslinje:
+Bytter du **Vis etter** til kalenderen, vises de samme plasseringene som stolper på en månedstidslinje:
 
 <figure>
 
 ![Studentplasseringer — kalendervisning](./img/TS-09-create-placement/03-calendar-view.png)
 
-<figcaption>Student placement — kalendervisning (plasseringer tegnet over datointervallene sine)</figcaption>
+<figcaption>Student plassering — kalendervisning (plasseringer tegnet over datointervallene sine)</figcaption>
 
 </figure>
 
-### 3. Klikk på "Create new student placement"
+### 3. Klikk på "Opprett ny student plassering"
 
-Siden **New Student Placement** åpnes med meldingen *"Welcome! Let's Get Started — Pick an approved request to start a placement matched to it — or start a blank placement to fill the details yourself."*
+Siden **Ny student plassering** åpnes med meldingen *"Velkommen! La oss komme i gang — velg en godkjent forespørsel for å starte en plassering som er koblet til den, eller start en tom plassering og fyll inn detaljene selv."*
 
-Den viser de godkjente kvoteforespørslene med kapasitet for programmet ditt (her *"5 requests with capacity for your programme"*), filtrerbare på **programme**, **emne** og **period**. Hvert kort viser praksisstedet, programme · emne · periode, et **Approved**-merke, en kapasitetslinje (plasser i bruk vs. ledige), fordelingen per enhet og en **Use this**-knapp. Du kan også velge **Start a blank placement** eller **Request quota** hvis ingenting passer.
+Den viser de godkjente kvoteforespørslene med kapasitet for programmet ditt (her *"5 forespørsler med kapasitet for programmet ditt"*), filtrerbare på **program**, **emne** og **periode**. Hvert kort viser praksisstedet, programme · emne · periode, et **Godkjent**-merke, en kapasitetslinje (plasser i bruk vs. ledige), fordelingen per enhet og en **Bruk denne**-knapp. Du kan også velge **Start en tom plassering** eller **Be om kvote** hvis ingenting passer.
 
 <figure>
 
-![New Student Placement — forespørselsvelger](./img/TS-09-create-placement/04-request-picker.png)
+![Ny student plassering — forespørselsvelger](./img/TS-09-create-placement/04-request-picker.png)
 
-<figcaption>New Student Placement — velg en godkjent kvoteforespørsel</figcaption>
+<figcaption>Ny student plassering — velg en godkjent kvoteforespørsel</figcaption>
 
 </figure>
 
-### 4. Velg en kvoteforespørsel og klikk på "Use this"
+### 4. Velg en kvoteforespørsel og klikk på "Bruk denne"
 
-Velg forespørselen du vil basere plasseringen på — her **Mørkheim kommune · Bachelor Vernepleie · Ver1001 · 9 Sep 2026 – 9 Dec 2026** (90 ledige plasser) — og klikk på **Use this**.
+Velg forespørselen du vil basere plasseringen på — her **Mørkheim kommune · Bachelor Vernepleie · Ver1001 · 9 Sep 2026 – 9 Dec 2026** (90 ledige plasser) — og klikk på **Bruk denne**.
 
 ### 5. Bekreft plasseringsdetaljene og opprett
 
-Trinnet **Confirm placement details** vises: *"These come from the quota request and are locked so the placement stays matched. Name it, confirm the dates, then create."*
+Trinnet **Bekreft plasseringsdetaljer** vises: *"Disse hentes fra kvoteforespørselen og er låst slik at plasseringen holdes koblet. Gi den et navn, bekreft datoene, og opprett den."*
 
-- **Praksis place**, **Programme**, **Emne** og **Quota window** vises skrivebeskyttet.
-- **Placement title** er forhåndsutfylt (her `Helse-, sosial og idrettsfag/Ver1001/2026/Autumn`) og kan redigeres.
-- **Start date** og **End date** er forhåndsutfylt med kvotevinduet og må holde seg innenfor det (*"On or after 9 Sep 2026"* / *"On or before 9 Dec 2026"*).
+- **Praksissted**, **Program**, **Emne** og **Kvotevindu** vises skrivebeskyttet.
+- **Plasseringstittel** er forhåndsutfylt (her `Helse-, sosial og idrettsfag/Ver1001/2026/Autumn`) og kan redigeres.
+- **Startdato** og **Sluttdato** er forhåndsutfylt med kvotevinduet og må holde seg innenfor det (*"På eller etter 9. sep. 2026"* / *"På eller før 9. des. 2026"*).
 
-Huk av for **"The start and end dates are correct for this placement"** — den bekrefter *9 Sep 2026 – 9 Dec 2026 (within the quota window)* — og klikk på **Create & open**.
+Huk av for **"Start- og sluttdatoene er riktige for denne plasseringen"** — den bekrefter *9 Sep 2026 – 9 Dec 2026 (innenfor kvotevinduet)* — og klikk på **Opprett og åpne**.
 
 <figure>
 
 ![Bekreft plasseringsdetaljer](./img/TS-09-create-placement/05-confirm-details.png)
 
-<figcaption>Confirm placement details — låste forespørselsdata, forhåndsutfylte datoer, bekreftelsesboks</figcaption>
+<figcaption>Bekreft plasseringsdetaljer — låste forespørselsdata, forhåndsutfylte datoer, bekreftelsesboks</figcaption>
 
 </figure>
 
@@ -98,7 +98,7 @@ Huk av for **"The start and end dates are correct for this placement"** — den 
 
 ## Sluttresultat
 
-Plasseringen opprettes og åpnes på detaljsiden sin: **Helse-, sosial og idrettsfag/Ver1001/2026/Autumn** (2026 · Autumn · 2026-09-09 – 2026-12-09) med status **1/3 Setup Students & Quotas**. Fordi den ble opprettet fra forespørselen, viser **Available Quotas**-panelet til venstre allerede den koblede forespørselen — **Mørkheim kommune** med enhetene sine (Mørkheim kommune 45/45, Bjørkely sykehjem 45/45, totalt 90 ledige). Høyre kolonne ber deg om å **Import Students**.
+Plasseringen opprettes og åpnes på detaljsiden sin: **Helse-, sosial og idrettsfag/Ver1001/2026/Autumn** (2026 · Høst · 2026-09-09 – 2026-12-09) med status **1/3 Sett opp studenter og kvoter**. Fordi den ble opprettet fra forespørselen, viser **Tilgjengelige kvoter**-panelet til venstre allerede den koblede forespørselen — **Mørkheim kommune** med enhetene sine (Mørkheim kommune 45/45, Bjørkely sykehjem 45/45, totalt 90 ledige). Høyre kolonne ber deg om å **Importer studenter**.
 
 Scenarioet slutter her — import av studenter dekkes i neste scenario.
 
@@ -106,7 +106,7 @@ Scenarioet slutter her — import av studenter dekkes i neste scenario.
 
 ![Plassering opprettet og åpnet](./img/TS-09-create-placement/06-created.png)
 
-<figcaption>Etter Create & open — koblede kvoter til venstre, Import Students-oppfordring til høyre</figcaption>
+<figcaption>Etter Opprett og åpne — koblede kvoter til venstre, Importer studenter-oppfordring til høyre</figcaption>
 
 </figure>
 

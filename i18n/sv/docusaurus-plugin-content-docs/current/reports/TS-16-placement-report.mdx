@@ -8,7 +8,7 @@ sidebar_position: 16
 
 :::info[Scenarioöversikt]
 
-- **Sida:** Reports → Placement rapport
+- **Sida:** Rapporter → Placeringsrapport
 - **Roll:** Placeringskoordinator (PK)
 - **Mål:** Bläddra bland placeringar, välj en eller flera för att granska importerade studenter och kvotförbrukning på praktikplatser sida vid sida, avgränsa listan med filter, och expandera ett urval till full bredd.
 - **Förutsättning:** Inloggad som PK, med placeringar som har importerade studenter och anslutna praktikplatser. Den här genomgången använder de befintliga placeringarna **SP101b** och **FY101, Fysioterapi Bachelor**.
@@ -17,9 +17,9 @@ sidebar_position: 16
 
 ## Vad den här sidan är
 
-**Placement rapport** är den tredje posten under **Reports** i sidofältet (bredvid **Invoicing**, **Student rapport** och **Capacity report**). Till skillnad från Student rapport är detta en vy med **flerval**: kryssa för så många placeringar du vill till vänster, och var och en får sin egen sektion staplad i detaljpanelen till höger — så att du kan jämföra flera placeringar samtidigt istället för en i taget.
+**Placeringsrapport** är den tredje posten under **Rapporter** i sidofältet (bredvid **Fakturering**, **Studentrapport** och **Kapacitetsrapport**). Till skillnad från Studentrapport är detta en vy med **flerval**: kryssa för så många placeringar du vill till vänster, och var och en får sin egen sektion staplad i detaljpanelen till höger — så att du kan jämföra flera placeringar samtidigt istället för en i taget.
 
-Filterfältet avgränsar placeringslistan på **Study / Program** (en kaskadmeny — välj ett studium, sedan eventuellt ett av dess program), **Emne**, **Status** (Draft, Upload students, Select praksis places, First publish, Completed) och **Period**; ett sökfält matchar också på titel, emne eller termin. Varje placeringskort i listan visar titel, statusmärke, termin/emne och antal importerade studenter, med **Select all** / **Clear all** ovanför listan. För varje ikryssad placering visar detaljpanelen en sammanfattningsrad (Year, Semester, Emne, Start-/slutdatum, Imported students, Not attached) följt av en **Praksis places**-tabell — en rad per ansluten entitet, med **Quota status**, **Requested**, **Approved**, **Consumed** och **Available**, samt en **Total**-rad — eller ett tomt-tillstånd-meddelande om inga praktikplatser är anslutna ännu. En **Expand**-knapp uppe till höger i detaljpanelen döljer placeringslistan och verktygsfältet så att urvalet kan granskas i full bredd; **Collapse** återställer den delade vyn.
+Filterfältet avgränsar placeringslistan på **Studie / program** (en kaskadmeny — välj ett studium, sedan eventuellt ett av dess program), **Emne**, **Status** (Utkast, Ladda upp studenter, Välj praktikplatser, Första publicering, Slutförd) och **Period**; ett sökfält matchar också på titel, emne eller termin. Varje placeringskort i listan visar titel, statusmärke, termin/emne och antal importerade studenter, med **Markera alla** / **Rensa alla** ovanför listan. För varje ikryssad placering visar detaljpanelen en sammanfattningsrad (År, Termin, Emne, Start-/slutdatum, Importerade studenter, Inte kopplad) följt av en **Praktikplatser**-tabell — en rad per ansluten entitet, med **Kvotstatus**, **Begärd**, **Godkänd**, **Förbrukad** och **Tillgänglig**, samt en **Totalt**-rad — eller ett tomt-tillstånd-meddelande om inga praktikplatser är anslutna ännu. En **Visa**-knapp uppe till höger i detaljpanelen döljer placeringslistan och verktygsfältet så att urvalet kan granskas i full bredd; **Dölj** återställer den delade vyn.
 
 Som standard är rapporten avgränsad till innevarande och nästa termin — placeringslistan visar därför bara placeringar vars datum faller inom det tidsspannet. Använd filtret **Period** för att utöka, ändra eller ta bort denna avgränsning och få med andra placeringar, inklusive tidigare terminer.
 
@@ -27,33 +27,33 @@ Som standard är rapporten avgränsad till innevarande och nästa termin — pla
 
 ## Steg
 
-### 1. Starta på Dashboard
+### 1. Starta på Instrumentpanelen
 
-Efter inloggning kommer du till **Dashboard**.
+Efter inloggning kommer du till **Instrumentpanelen**.
 
 <figure>
 
-![Dashboard — startpunkt](./img/TS-16-placement-report/01-dashboard.png)
+![Instrumentpanelen — startpunkt](./img/TS-16-placement-report/01-dashboard.png)
 
-<figcaption>Startpunkt — Dashboard</figcaption>
+<figcaption>Startpunkt — Instrumentpanelen</figcaption>
 
 </figure>
 
-### 2. Öppna Reports → Placement rapport
+### 2. Öppna Rapporter → Placeringsrapport
 
-Klicka på **Reports** i sidofältet för att expandera det, och klicka sedan på **Placement rapport**. Sidan öppnas med filterfältet och en kryssrutelista över placeringar till vänster; inget är valt ännu, så den högra panelen visar *"Select one or more placements."*
+Klicka på **Rapporter** i sidofältet för att expandera det, och klicka sedan på **Placeringsrapport**. Sidan öppnas med filterfältet och en kryssrutelista över placeringar till vänster; inget är valt ännu, så den högra panelen visar *"Välj en eller flera placeringar."*
 
 <figure>
 
 ![Översikt över placeringsrapporten med placeringslistan](./img/TS-16-placement-report/02-placement-report-overview.png)
 
-<figcaption>Placement rapport — placeringslista och filterfält, inget valt</figcaption>
+<figcaption>Placeringsrapport — placeringslista och filterfält, inget valt</figcaption>
 
 </figure>
 
 ### 3. Välj en placering
 
-Kryssa för en placering i listan — här **SP101b**. Dess sektion laddas till höger: sammanfattningsraden (**3** importerade studenter, **0** ej anslutna) följt av **Praksis places (4)** med siffror för begärd/godkänd/förbrukad/tillgänglig per entitet och en **Total**-rad (200 godkänt, 3 förbrukat, 197 tillgängligt).
+Kryssa för en placering i listan — här **SP101b**. Dess sektion laddas till höger: sammanfattningsraden (**3** importerade studenter, **0** ej anslutna) följt av **Praktikplatser (4)** med siffror för begärd/godkänd/förbrukad/tillgänglig per entitet och en **Totalt**-rad (200 godkänt, 3 förbrukat, 197 tillgängligt).
 
 <figure>
 
@@ -75,21 +75,21 @@ Kryssa för ytterligare en placering — här **FY101, Fysioterapi Bachelor** �
 
 </figure>
 
-### 5. Filtrera på Study / Program
+### 5. Filtrera på Studie / program
 
-Rensa urvalet, klicka på **Study / Program**, och välj ett studium — här **Helse-, sosial og idrettsfag** — och sedan ett program, till exempel **Bachelor fysioterapi**. Knapptexten uppdateras, en **Clear filters**-länk visas, och placeringslistan avgränsas (här till **1 placement**). Samma mönster gäller för **Emne**, **Status** och **Period**.
+Rensa urvalet, klicka på **Studie / program**, och välj ett studium — här **Helse-, sosial og idrettsfag** — och sedan ett program, till exempel **Bachelor fysioterapi**. Knapptexten uppdateras, en **Rensa filter**-länk visas, och placeringslistan avgränsas (här till **1 placering**). Samma mönster gäller för **Emne**, **Status** och **Period**.
 
 <figure>
 
-![Study/Program-filter avgränsar placeringslistan](./img/TS-16-placement-report/05-program-filter.png)
+![Studie/program-filter avgränsar placeringslistan](./img/TS-16-placement-report/05-program-filter.png)
 
-<figcaption>Study / Program-filter — avgränsat till Helse-, sosial og idrettsfag / Bachelor fysioterapi</figcaption>
+<figcaption>Studie / program-filter — avgränsat till Helse-, sosial og idrettsfag / Bachelor fysioterapi</figcaption>
 
 </figure>
 
 ### 6. Expandera till full bredd
 
-Rensa filtret, välj en placering, och klicka sedan på **Expand** (uppe till höger i detaljpanelen). Placeringslistan och verktygsfältet döljs, och den/de valda sektionen/sektionerna fyller full bredd, vilket gör breda kvottabeller enklare att läsa. Klicka på **Collapse** för att återgå till den delade vyn.
+Rensa filtret, välj en placering, och klicka sedan på **Visa** (uppe till höger i detaljpanelen). Placeringslistan och verktygsfältet döljs, och den/de valda sektionen/sektionerna fyller full bredd, vilket gör breda kvottabeller enklare att läsa. Klicka på **Dölj** för att återgå till den delade vyn.
 
 <figure>
 

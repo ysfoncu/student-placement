@@ -8,17 +8,17 @@ sidebar_position: 7
 
 :::info[Scenarioöversikt]
 
-- **Sida:** Capacity planning
+- **Sida:** Kapacitetsplanering
 - **Roll:** Placeringskoordinator (PK), som godkänner å studentkoordinatorns (SK) vägnar
 - **Mål:** Godkänn en väntande kvotförfrågan med den gröna bock-åtgärden, och **ändra den godkända kvoten** så att den skiljer sig från det som begärdes.
-- **Förutsättning:** Minst en kvotförfrågan med status Pending finns. (Skapa en först med *Testscenario 06*.) Det här scenariot använder en förfrågan om **5** platser.
+- **Förutsättning:** Minst en kvotförfrågan med status Väntande finns. (Skapa en först med *Testscenario 06*.) Det här scenariot använder en förfrågan om **5** platser.
 
 :::
 
 ## Vad detta omfattar
 
 En väntande förfrågan godkänns normalt av studentkoordinatorn (SK) på praktikplatsen. För testning
- kan koordinatorn (PK) godkänna den direkt från listan **Quota Requests** med den gröna
+ kan koordinatorn (PK) godkänna den direkt från listan **Kvotförfrågningar** med den gröna
  ✓-åtgärden. Under granskningen kan du **sänka den godkända kvoten per enhet** — det
  godkända antalet kan vara mindre än (men inte större än) det begärda antalet.
 
@@ -28,53 +28,53 @@ En väntande förfrågan godkänns normalt av studentkoordinatorn (SK) på prakt
 
 ### 1. Hitta den väntande förfrågan och klicka på den gröna bocken
 
-Leta upp förfrågan med status Pending på **Capacity planning**.
- Klicka på den gröna ✓ (*"Approve on behalf of SK"*) i kolumnen **Actions**.
+Leta upp förfrågan med status Väntande på **Kapacitetsplanering**.
+ Klicka på den gröna ✓ (*"Godkänn på SK:s vägnar"*) i kolumnen **Åtgärder**.
 
 <figure>
 
 ![Väntande förfrågan med grön bock-åtgärd](./img/TS-07-approve-quota-request/01-pending-request.png)
 
-<figcaption>Den väntande förfrågan — grön ✓ i kolumnen Actions (Requested = 5)</figcaption>
+<figcaption>Den väntande förfrågan — grön ✓ i kolumnen Åtgärder (Begärd = 5)</figcaption>
 
 </figure>
 
 ### 2. Bekräfta godkännandevarningen
 
-En varning förklarar att du godkänner å SK:s vägnar. Klicka på **Continue to Review**.
+En varning förklarar att du godkänner å SK:s vägnar. Klicka på **Fortsätt till granskning**.
 
 <figure>
 
 ![Varning om godkännande å studentkoordinatorns vägnar](./img/TS-07-approve-quota-request/02-approval-warning.png)
 
-<figcaption>Varning — "Approve on Behalf of Student Coordinator"</figcaption>
+<figcaption>Varning — "Godkänn på studentkoordinatorns vägnar"</figcaption>
 
 </figure>
 
 ### 3. Granska förfrågan
 
-Modalen **Review Quota Request** visar förfrågningsdetaljerna och en enhetstabell med det
- **Requested**-antalet och ett redigerbart **Approve**-fält per enhet.
+Modalen **Granska kvotförfrågan** visar förfrågningsdetaljerna och en enhetstabell med det
+ **Begärd**-antalet och ett redigerbart **Godkänn**-fält per enhet.
 
 <figure>
 
-![Modalen Review Quota Request](./img/TS-07-approve-quota-request/03-review-modal.png)
+![Modalen Granska kvotförfrågan](./img/TS-07-approve-quota-request/03-review-modal.png)
 
-<figcaption>Granskningsmodal — Requested 5, Approve förifyllt till 5</figcaption>
+<figcaption>Granskningsmodal — Begärd 5, Godkänn förifyllt till 5</figcaption>
 
 </figure>
 
 ### 4. Ändra den godkända kvoten
 
-Ändra värdet i fältet **Approve** — här från **5** ner till **3**. Totalsumman
- **To Approve** uppdateras till **3**. *(Godkännandevärdet kan inte överstiga det begärda antalet.)*
- Klicka därefter på **Approve Request**.
+Ändra värdet i fältet **Godkänn** — här från **5** ner till **3**. Totalsumman
+ **Att godkänna** uppdateras till **3**. *(Godkännandevärdet kan inte överstiga det begärda antalet.)*
+ Klicka därefter på **Godkänn förfrågan**.
 
 <figure>
 
 ![Godkänd kvot ändrad till 3](./img/TS-07-approve-quota-request/04-change-quota.png)
 
-<figcaption>Godkänd kvot ändrad: Requested 5 → To Approve 3</figcaption>
+<figcaption>Godkänd kvot ändrad: Begärd 5 → Att godkänna 3</figcaption>
 
 </figure>
 
@@ -82,15 +82,15 @@ Modalen **Review Quota Request** visar förfrågningsdetaljerna och en enhetstab
 
 ## Slutresultat
 
-En toast med *"Quota request updated"* visas och förfrågans status blir
- Approved, med **Requested 5 / Approved 3**. Sektionen
- **Available Quotas** återspeglar den godkända kapaciteten (Approved = 3).
+Ett meddelande med *"Kvotförfrågan uppdaterades"* visas nere till höger och förfrågans status blir
+ Godkänd, med **Begärd 5 / Godkänd 3**. Sektionen
+ **Tillgängliga kvoter** återspeglar den godkända kapaciteten (Godkänd = 3).
 
 <figure>
 
 ![Slutlig lista — förfrågan godkänd med ändrad kvot](./img/TS-07-approve-quota-request/05-approved-final.png)
 
-<figcaption>Slutsida — förfrågan Approved med Requested 5 / Approved 3</figcaption>
+<figcaption>Slutsida — förfrågan Godkänd med Begärd 5 / Godkänd 3</figcaption>
 
 </figure>
 

@@ -384,7 +384,7 @@
     "message": "Ange din e-postadress för att lägga till din kommentar"
   },
   "homepage.header.subtitle": {
-    "message": "Steg-för-steg-genomgångar för varje Student Placement-uppgift"
+    "message": "Steg-för-steg-genomgångar för varje Student plassering-uppgift"
   },
   "homepage.header.tutorialsButton": {
     "message": "Handledningar"
@@ -408,9 +408,9 @@
     "message": "Berätta vad som fungerade i slutet av varje scenario — att skicka feedback markerar det som slutfört."
   },
   "homepage.about.title": {
-    "message": "Vad är Student Placement?"
+    "message": "Vad är Student plassering?"
   },
   "homepage.about.description": {
-    "message": "Student Placement hjälper universitet och högskolor att koordinera praktikplatser för sina studenter — från att sätta upp studier och program, till att begära och godkänna kvoter hos praktikplatser. Koordinatorer kan fördela studenter, samla in deras önskemål och följa allt genom fakturering, placerings- och kapacitetsrapporter."
+    "message": "Student plassering hjälper universitet och högskolor att koordinera praktikplatser för sina studenter — från att sätta upp studier och program, till att begära och godkänna kvoter hos praktikplatser. Koordinatorer kan fördela studenter, samla in deras önskemål och följa allt genom fakturering, placerings- och kapacitetsrapporter."
   }
 }

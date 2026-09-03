@@ -8,69 +8,69 @@ sidebar_position: 8
 
 :::info[Scenariooversikt]
 
-- **Side:** Capacity planning
+- **Side:** Kapasitetsplanlegging
 - **Rolle:** Praksiskoordinator (PK)
-- **Mål:** Bruk søkefeltet og filterkontrollene til å avgrense Quota Requests-listen, og fjern dem deretter.
+- **Mål:** Bruk søkefeltet og filterkontrollene til å avgrense Kvoteforespørsler-listen, og fjern dem deretter.
 - **Forutsetning:** Noen kvoteforespørsler finnes på tvers av ulike programmer, steder og statuser. Dette scenarioet bruker tre:
 
 :::
 
-| Forespørsel | Praksis Place | Program | Status |
+| Forespørsel | Praksissted | Program | Status |
 |---|---|---|---|
-| Autumn cohort A | Oslo University Hospital HF | Nursing | Approved |
-| Spring cohort B | Oslo University Hospital HF | Physiotherapy | Pending |
-| Bergen cohort C | Bergen Kommune | Nursing | Pending |
+| Autumn cohort A | Oslo University Hospital HF | Nursing | Godkjent |
+| Spring cohort B | Oslo University Hospital HF | Physiotherapy | Venter |
+| Bergen cohort C | Bergen Kommune | Nursing | Venter |
 
 ## Kontrollene
 
--   **Period** — avgrens listen til ett eller flere semestre, utløpte forespørsler eller et egendefinert datointervall. **Aktivert som standard** (se nedenfor).
--   **Search** (forstørrelsesglass-ikonet) — fritekstsøk på tvers av studium, program og praksisstedsnavn.
--   **Study / Program** — velg et studium, og gå deretter ned til et bestemt program.
--   **All Emne** — filtrer på emnekode.
--   **Praksis Place** — velg et sted, og deretter eventuelt en bestemt enhet.
--   **All Statuses** — Pending / Approved / Rejected / Fulfilled.
--   **Clear filters** — vises når et nedtrekksfilter er aktivt; tilbakestiller alle (endrer ikke Period-valget).
+-   **Periode** — avgrens listen til ett eller flere semestre, utløpte forespørsler eller et egendefinert datointervall. **Aktivert som standard** (se nedenfor).
+-   **Søk** (forstørrelsesglass-ikonet) — fritekstsøk på tvers av studium, program og praksisstedsnavn.
+-   **Studium / program** — velg et studium, og gå deretter ned til et bestemt program.
+-   **Alle emner** — filtrer på emnekode.
+-   **Praksissted** — velg et sted, og deretter eventuelt en bestemt enhet.
+-   **Alle statuser** — Venter / Godkjent / Avslått / Oppfylt.
+-   **Tøm filtre** — vises når et nedtrekksfilter er aktivt; tilbakestiller alle (endrer ikke Periode-valget).
 ---
 
 ## Trinn
 
 ### 1. Merk deg standardvalget for periode
 
-Siden starter **ikke** ufiltrert. Som standard er **Period**-filteret forhåndsinnstilt til
- **This Semester** + **Next Semester** — vist med **2**-merket på Period-knappen og de to
- chipene under verktøylinjen (*"Showing: This Semester · … · Next Semester · …"*). Forespørsler med datoer
+Siden starter **ikke** ufiltrert. Som standard er **Periode**-filteret forhåndsinnstilt til
+ **Denne terminen** + **Neste termin** — vist med **2**-merket på Periode-knappen og de to
+ chipene under verktøylinjen (*"Viser: Denne terminen · … · Neste termin · …"*). Forespørsler med datoer
  utenfor begge semestrene skjules til du endrer dette.
 
 <figure>
 
 ![Standardvalg for periode — dette + neste semester](./img/TS-08-search-and-filters/01-default-period.png)
 
-<figcaption>Standardtilstand — Period = This Semester + Next Semester (merke "2", to chips)</figcaption>
+<figcaption>Standardtilstand — Periode = Denne terminen + Neste termin (merke "2", to chips)</figcaption>
 
 </figure>
 
-### 2. Åpne Period-filteret
+### 2. Åpne Periode-filteret
 
-Klikk på **Period**-knappen for å åpne det. De to standardsemestrene er avkrysset. Herfra kan du:
+Klikk på **Periode**-knappen for å åpne det. De to standardsemestrene er avkrysset. Herfra kan du:
 
--   Slå av/på **Previous / This / Next Semester** eller **Expired Requests** (flervalg).
--   Bytte til **Custom Date Range** og velge en bestemt fra-/til-dato.
--   Bruke **Clear** for å fjerne alle periodebegrensninger (vise alle perioder), eller **Done** for å ta valgene i bruk.
+-   Slå av/på **Forrige/denne/neste termin** eller **Utløpte forespørsler** (flervalg).
+-   Bytte til **Egendefinert datointervall** og velge en bestemt fra-/til-dato.
+-   Bruke **Tøm** for å fjerne alle periodebegrensninger (vise alle perioder), eller **Ferdig** for å ta valgene i bruk.
 
 Du kan også fjerne en periode direkte ved å klikke på **×** på chipen dens under verktøylinjen.
 
 <figure>
 
-![Period-nedtrekksmenyen åpen](./img/TS-08-search-and-filters/02-period-dropdown.png)
+![Periode-nedtrekksmenyen åpen](./img/TS-08-search-and-filters/02-period-dropdown.png)
 
-<figcaption>Period-nedtrekksmenyen — This Semester og Next Semester avkrysset som standard</figcaption>
+<figcaption>Periode-nedtrekksmenyen — Denne terminen og Neste termin avkrysset som standard</figcaption>
 
 </figure>
 
 ### 3. Søk etter navn
 
 Klikk på **magnifier**-ikonet (forstørrelsesglasset) for å åpne søkefeltet, og skriv inn et søkeord — her `Bergen`.
- Listen avgrenses til forespørsler der studium, program eller praksissted samsvarer. Klikk på **Close** for å avslutte søket.
+ Listen avgrenses til forespørsler der studium, program eller praksissted samsvarer. Klikk på **Lukk** for å avslutte søket.
 
 <figure>
 
@@ -82,33 +82,33 @@ Klikk på **magnifier**-ikonet (forstørrelsesglasset) for å åpne søkefeltet,
 
 ### 4. Filtrer på status
 
-Åpne nedtrekksmenyen **Statuses** og velg **Approved**. Bare godkjente forespørsler blir igjen.
+Åpne nedtrekksmenyen **Statuser** og velg **Godkjent**. Bare godkjente forespørsler blir igjen.
 
 <figure>
 
-![Statusfilter = Approved](./img/TS-08-search-and-filters/04-status-approved.png)
+![Statusfilter = Godkjent](./img/TS-08-search-and-filters/04-status-approved.png)
 
-<figcaption>Status = Approved → kun "Autumn cohort A"</figcaption>
+<figcaption>Status = Godkjent → kun "Autumn cohort A"</figcaption>
 
 </figure>
 
 ### 5. Filtrer på studium/program
 
-Åpne **Study / Program**, hold pekeren over studiet (*Helse-, sosial og idrettsfag*), og velg deretter et
+Åpne **Studium / program**, hold pekeren over studiet (*Helse-, sosial og idrettsfag*), og velg deretter et
  program — her **Physiotherapy**. Listen viser kun forespørslene for dette programmet.
 
 <figure>
 
-![Study/Program-filter = Physiotherapy](./img/TS-08-search-and-filters/05-program-filter.png)
+![Studium/program-filter = Physiotherapy](./img/TS-08-search-and-filters/05-program-filter.png)
 
-<figcaption>Study / Program = Physiotherapy → kun "Spring cohort B"</figcaption>
+<figcaption>Studium / program = Physiotherapy → kun "Spring cohort B"</figcaption>
 
 </figure>
 
 ### 6. Fjern filtrene
 
-Klikk på **Clear filters** (eller **×**) for å tilbakestille nedtrekksfiltrene og gå tilbake til listen
- (Period-valget beholdes slik det er satt).
+Klikk på **Tøm filtre** (eller **×**) for å tilbakestille nedtrekksfiltrene og gå tilbake til listen
+ (Periode-valget beholdes slik det er satt).
 
 <figure>
 

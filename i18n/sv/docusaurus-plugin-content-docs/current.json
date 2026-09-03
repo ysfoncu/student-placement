@@ -12,7 +12,7 @@
     "description": "The label for category 'Quota Request' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Student Placement": {
-    "message": "Studentplacering",
+    "message": "Student plassering",
     "description": "The label for category 'Student Placement' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Custom workflows": {

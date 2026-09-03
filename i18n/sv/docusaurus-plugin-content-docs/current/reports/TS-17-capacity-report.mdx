@@ -8,18 +8,18 @@ sidebar_position: 17
 
 :::info[Scenarioöversikt]
 
-- **Sida:** Reports → Capacity report
+- **Sida:** Rapporter → Kapacitetsrapport
 - **Roll:** Placeringskoordinator (PK)
 - **Mål:** Bläddra bland kvotförfrågningar, välj en eller flera för att jämföra begärd vs. godkänd kapacitet mot vad de länkade placeringarna faktiskt förbrukar, filtrera listan på status, och expandera ett urval till full bredd.
-- **Förutsättning:** Inloggad som PK, med kvotförfrågningar i olika statusar. Den här genomgången använder de befintliga förfrågningarna **Mørkheim kommune / SP101B** (Approved), **Vestmark sykehus / FY101** (Approved) och **Mørkheim kommune / SP101** (Pending).
+- **Förutsättning:** Inloggad som PK, med kvotförfrågningar i olika statusar. Den här genomgången använder de befintliga förfrågningarna **Mørkheim kommune / SP101B** (Godkänd), **Vestmark sykehus / FY101** (Godkänd) och **Mørkheim kommune / SP101** (Väntande).
 
 :::
 
 ## Vad den här sidan är
 
-**Capacity report** är den fjärde posten under **Reports** i sidofältet (bredvid **Invoicing**, **Student rapport** och **Placement rapport**). Liksom Placement rapport är detta en vy med **flerval**: kryssa för så många kvotförfrågningar du vill till vänster, och var och en får sin egen jämförelsesektion staplad i detaljpanelen till höger.
+**Kapacitetsrapport** är den fjärde posten under **Rapporter** i sidofältet (bredvid **Fakturering**, **Studentrapport** och **Placeringsrapport**). Liksom Placeringsrapport är detta en vy med **flerval**: kryssa för så många kvotförfrågningar du vill till vänster, och var och en får sin egen jämförelsesektion staplad i detaljpanelen till höger.
 
-Filterfältet avgränsar förfrågningslistan på **Study / Program** (en kaskadmeny), **Emne**, **Status** (Pending, Approved, Rejected, Fulfilled) och **Period**; ett sökfält matchar också på praktikplats, studium, program eller emne. Varje förfrågningskort i listan visar praktikplatsens namn, ett statusmärke, program/emne, samt begärda/godkända summor, med **Select all** / **Clear all** ovanför listan. För varje ikryssad förfrågan visar detaljpanelen en rubrik (praktikplats, studium/program, emne, period, status) följt av en **Request details**-tabell — en rad per entitet, med **Requested**, **Approved**, **Consumed** och **Available**, samt en **Total**-rad — och en **Linked placement tasks**-tabell som visar vilka placeringar som drar på denna förfrågan, med start-/slutdatum och totalt antal tilldelade studenter, eller ett tomt-tillstånd-meddelande om inga är länkade ännu. En **Expand**-knapp uppe till höger i detaljpanelen döljer förfrågningslistan och verktygsfältet så att urvalet kan granskas i full bredd; **Collapse** återställer den delade vyn.
+Filterfältet avgränsar förfrågningslistan på **Studie / program** (en kaskadmeny), **Emne**, **Status** (Väntande, Godkänd, Avslagen, Uppfylld) och **Period**; ett sökfält matchar också på praktikplats, studium, program eller emne. Varje förfrågningskort i listan visar praktikplatsens namn, ett statusmärke, program/emne, samt begärda/godkända summor, med **Markera alla** / **Rensa alla** ovanför listan. För varje ikryssad förfrågan visar detaljpanelen en rubrik (praktikplats, studium/program, emne, period, status) följt av en **Förfrågningsuppgifter**-tabell — en rad per entitet, med **Begärd**, **Godkänd**, **Förbrukad** och **Tillgänglig**, samt en **Totalt**-rad — och en **Länkade placeringsuppgifter**-tabell som visar vilka placeringar som drar på denna förfrågan, med start-/slutdatum och totalt antal tilldelade studenter, eller ett tomt-tillstånd-meddelande om inga är länkade ännu. En **Visa**-knapp uppe till höger i detaljpanelen döljer förfrågningslistan och verktygsfältet så att urvalet kan granskas i full bredd; **Dölj** återställer den delade vyn.
 
 Som standard är rapporten avgränsad till innevarande och nästa termin — förfrågningslistan visar därför bara förfrågningar vars datum faller inom det tidsspannet. Använd filtret **Period** för att utöka, ändra eller ta bort denna avgränsning och få med andra förfrågningar, inklusive tidigare terminer.
 
@@ -27,33 +27,33 @@ Som standard är rapporten avgränsad till innevarande och nästa termin — fö
 
 ## Steg
 
-### 1. Starta på Dashboard
+### 1. Starta på Instrumentpanelen
 
-Efter inloggning kommer du till **Dashboard**.
+Efter inloggning kommer du till **Instrumentpanelen**.
 
 <figure>
 
-![Dashboard — startpunkt](./img/TS-17-capacity-report/01-dashboard.png)
+![Instrumentpanelen — startpunkt](./img/TS-17-capacity-report/01-dashboard.png)
 
-<figcaption>Startpunkt — Dashboard</figcaption>
+<figcaption>Startpunkt — Instrumentpanelen</figcaption>
 
 </figure>
 
-### 2. Öppna Reports → Capacity report
+### 2. Öppna Rapporter → Kapacitetsrapport
 
-Klicka på **Reports** i sidofältet för att expandera det, och klicka sedan på **Capacity report**. Sidan öppnas med filterfältet och en kryssrutelista över kvotförfrågningar till vänster; inget är valt ännu, så den högra panelen visar *"Select one or more quota requests."*
+Klicka på **Rapporter** i sidofältet för att expandera det, och klicka sedan på **Kapacitetsrapport**. Sidan öppnas med filterfältet och en kryssrutelista över kvotförfrågningar till vänster; inget är valt ännu, så den högra panelen visar *"Välj en eller flera kvotförfrågningar."*
 
 <figure>
 
 ![Översikt över kapacitetsrapporten med förfrågningslistan](./img/TS-17-capacity-report/02-capacity-report-overview.png)
 
-<figcaption>Capacity report — förfrågningslista och filterfält, inget valt</figcaption>
+<figcaption>Kapacitetsrapport — förfrågningslista och filterfält, inget valt</figcaption>
 
 </figure>
 
 ### 3. Välj en förfrågan
 
-Kryssa för en förfrågan i listan — här **Mørkheim kommune / SP101B**. Dess sektion laddas till höger: rubriken (studium/program, emne **SP101B**, period, **Approved**-märke) följt av **Request details** med siffror per entitet och en **Total**-rad (200 godkänt, 3 förbrukat, 197 tillgängligt), sedan **Linked placement tasks (1)** som visar placeringen **SP101b** med 3 tilldelade studenter.
+Kryssa för en förfrågan i listan — här **Mørkheim kommune / SP101B**. Dess sektion laddas till höger: rubriken (studium/program, emne **SP101B**, period, **Godkänd**-märke) följt av **Förfrågningsuppgifter** med siffror per entitet och en **Totalt**-rad (200 godkänt, 3 förbrukat, 197 tillgängligt), sedan **Länkade placeringsuppgifter (1)** som visar placeringen **SP101b** med 3 tilldelade studenter.
 
 <figure>
 
@@ -77,19 +77,19 @@ Kryssa för ytterligare en förfrågan — här **Vestmark sykehus / FY101** —
 
 ### 5. Filtrera på Status
 
-Rensa urvalet, klicka på statusrullgardinen, och välj **Pending**. Listan avgränsas till den enda matchande förfrågan — **Mørkheim kommune / SP101**, begärt 40 / godkänt 0. Att välja den visar ett **Pending**-märke, ett **Available** på 0 (inget godkänt ännu), och *"No placement tasks linked to this request"* eftersom inget har tilldelats mot den ännu. Samma mönster gäller för **Study / Program**, **Emne** och **Period**.
+Rensa urvalet, klicka på statusrullgardinen, och välj **Väntande**. Listan avgränsas till den enda matchande förfrågan — **Mørkheim kommune / SP101**, begärt 40 / godkänt 0. Att välja den visar ett **Väntande**-märke, ett **Tillgänglig** på 0 (inget godkänt ännu), och *"Inga placeringsuppgifter är länkade till den här förfrågan"* eftersom inget har tilldelats mot den ännu. Samma mönster gäller för **Studie / program**, **Emne** och **Period**.
 
 <figure>
 
-![Statusfilter avgränsat till Pending, visar förfrågan med tomt tillstånd](./img/TS-17-capacity-report/05-pending-filter.png)
+![Statusfilter avgränsat till Väntande, visar förfrågan med tomt tillstånd](./img/TS-17-capacity-report/05-pending-filter.png)
 
-<figcaption>Statusfilter — Pending-förfrågan utan godkänd kapacitet eller länkade placeringar ännu</figcaption>
+<figcaption>Statusfilter — Väntande-förfrågan utan godkänd kapacitet eller länkade placeringar ännu</figcaption>
 
 </figure>
 
 ### 6. Expandera till full bredd
 
-Rensa filtret, välj en förfrågan, och klicka sedan på **Expand** (uppe till höger i detaljpanelen). Förfrågningslistan och verktygsfältet döljs, och den/de valda sektionen/sektionerna fyller full bredd, vilket gör breda jämförelsetabeller enklare att läsa. Klicka på **Collapse** för att återgå till den delade vyn.
+Rensa filtret, välj en förfrågan, och klicka sedan på **Visa** (uppe till höger i detaljpanelen). Förfrågningslistan och verktygsfältet döljs, och den/de valda sektionen/sektionerna fyller full bredd, vilket gör breda jämförelsetabeller enklare att läsa. Klicka på **Dölj** för att återgå till den delade vyn.
 
 <figure>
 

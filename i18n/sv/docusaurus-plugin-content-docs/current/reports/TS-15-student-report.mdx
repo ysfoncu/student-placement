@@ -8,7 +8,7 @@ sidebar_position: 15
 
 :::info[Scenarioöversikt]
 
-- **Sida:** Reports → Student rapport
+- **Sida:** Rapporter → Studentrapport
 - **Roll:** Placeringskoordinator (PK)
 - **Mål:** Bläddra bland inskrivna studenter, avgränsa listan med filter, välj en student för att se hela placerings- och prioriteringshistoriken, och expandera profilen till full bredd.
 - **Förutsättning:** Inloggad som PK, med inskrivna studenter som har placeringshistorik. Den här genomgången använder de befintliga studenterna **Kari Hansen**, **Lars Johansen** och **Ola Nordmann**.
@@ -17,9 +17,9 @@ sidebar_position: 15
 
 ## Vad den här sidan är
 
-**Student rapport** är den andra posten under **Reports** i sidofältet (bredvid **Invoicing**, **Placement rapport** och **Capacity report**). Det är en master/detalj-vy: en filtrerbar lista över inskrivna studenter till vänster, och den valda studentens fullständiga profil till höger.
+**Studentrapport** är den andra posten under **Rapporter** i sidofältet (bredvid **Fakturering**, **Placeringsrapport** och **Kapacitetsrapport**). Det är en master/detalj-vy: en filtrerbar lista över inskrivna studenter till vänster, och den valda studentens fullständiga profil till höger.
 
-Filterfältet avgränsar studentlistan på **Study / Programme** (en kaskadmeny — välj ett studium, sedan eventuellt ett av dess program), **Emne**, **Location** och **Period**; ett sökfält matchar också på namn, e-post eller personnummer. Att välja en student till vänster laddar deras profil till höger: ett identitetskort (namn, personnummer, e-post, telefon, adress, samt märke för körkort om tillämpligt) med räknare för **Placements** och **Priority requests**, följt av en **Placement history**-sektion (ett kort per placering, med termin, emne/ämne, tilldelad praktikplats och entitet, start-/slutdatum och handledare) och en **Priority request history**-sektion (ett kort per inskickad förfrågan, med målsemester, poäng, status och beslutsdetaljer) — båda sektionerna visar en enkel text som tomt-tillstånd när det inte finns något att visa ännu. En **Expand**-knapp uppe till höger i detaljpanelen döljer studentlistan och verktygsfältet så att profilen kan granskas i full bredd; **Collapse** återställer den delade vyn.
+Filterfältet avgränsar studentlistan på **Studie / program** (en kaskadmeny — välj ett studium, sedan eventuellt ett av dess program), **Emne**, **Plats** och **Period**; ett sökfält matchar också på namn, e-post eller personnummer. Att välja en student till vänster laddar deras profil till höger: ett identitetskort (namn, personnummer, e-post, telefon, adress, samt märke för körkort om tillämpligt) med räknare för **Placeringar** och **Prioritetsförfrågningar**, följt av en **Placeringshistorik**-sektion (ett kort per placering, med termin, emne/ämne, tilldelad praktikplats och entitet, start-/slutdatum och handledare) och en **Historik för prioritetsförfrågningar**-sektion (ett kort per inskickad förfrågan, med målsemester, poäng, status och beslutsdetaljer) — båda sektionerna visar en enkel text som tomt-tillstånd när det inte finns något att visa ännu. En **Visa**-knapp uppe till höger i detaljpanelen döljer studentlistan och verktygsfältet så att profilen kan granskas i full bredd; **Dölj** återställer den delade vyn.
 
 Som standard är rapporten avgränsad till innevarande och nästa termin — studentlistan visar därför bara studenter med en placering eller prioriteringsförfrågan inom det tidsspannet. Använd filtret **Period** för att utöka, ändra eller ta bort denna avgränsning och få med andra studenter, inklusive tidigare terminer.
 
@@ -27,33 +27,33 @@ Som standard är rapporten avgränsad till innevarande och nästa termin — stu
 
 ## Steg
 
-### 1. Starta på Dashboard
+### 1. Starta på Instrumentpanelen
 
-Efter inloggning kommer du till **Dashboard**.
+Efter inloggning kommer du till **Instrumentpanelen**.
 
 <figure>
 
-![Dashboard — startpunkt](./img/TS-15-student-report/01-dashboard.png)
+![Instrumentpanelen — startpunkt](./img/TS-15-student-report/01-dashboard.png)
 
-<figcaption>Startpunkt — Dashboard</figcaption>
+<figcaption>Startpunkt — Instrumentpanelen</figcaption>
 
 </figure>
 
-### 2. Öppna Reports → Student rapport
+### 2. Öppna Rapporter → Studentrapport
 
-Klicka på **Reports** i sidofältet för att expandera det, och klicka sedan på **Student rapport**. Sidan öppnas med filterfältet och en lista över inskrivna studenter till vänster; ingen student är vald ännu, så den högra panelen visar *"Select a student to see their history."*
+Klicka på **Rapporter** i sidofältet för att expandera det, och klicka sedan på **Studentrapport**. Sidan öppnas med filterfältet och en lista över inskrivna studenter till vänster; ingen student är vald ännu, så den högra panelen visar *"Välj en student för att se historiken."*
 
 <figure>
 
 ![Översikt över studentrapporten med studentlistan](./img/TS-15-student-report/02-student-report-overview.png)
 
-<figcaption>Student rapport — studentlista och filterfält, inget valt</figcaption>
+<figcaption>Studentrapport — studentlista och filterfält, inget valt</figcaption>
 
 </figure>
 
 ### 3. Välj en student
 
-Klicka på en student i listan — här **Ola Nordmann**. Deras profil laddas till höger: identitetskort med kontaktuppgifter, sedan **4 Placements** och **0 Priority requests**, följt av början på **Placement history**.
+Klicka på en student i listan — här **Ola Nordmann**. Deras profil laddas till höger: identitetskort med kontaktuppgifter, sedan **4 placeringar** och **0 prioritetsförfrågningar**, följt av början på **Placeringshistorik**.
 
 <figure>
 
@@ -65,19 +65,19 @@ Klicka på en student i listan — här **Ola Nordmann**. Deras profil laddas ti
 
 ### 4. Granska hela historiken
 
-Skrolla i profilpanelen för att se alla placeringsposter — inklusive de som ännu inte har någon tilldelad praktikplats — och sektionen **Priority request history** nedanför. För den här studenten står det *"No priority requests submitted by this student."*
+Skrolla i profilpanelen för att se alla placeringsposter — inklusive de som ännu inte har någon tilldelad praktikplats — och sektionen **Historik för prioritetsförfrågningar** nedanför. För den här studenten står det *"Inga prioritetsförfrågningar har skickats in av den här studenten."*
 
 <figure>
 
 ![Fullständig placeringshistorik och tom prioriteringshistorik](./img/TS-15-student-report/04-placement-history-full.png)
 
-<figcaption>Återstående placeringsposter, samt tomt-tillståndet för Priority request history</figcaption>
+<figcaption>Återstående placeringsposter, samt tomt-tillståndet för Historik för prioritetsförfrågningar</figcaption>
 
 </figure>
 
 ### 5. Expandera till full bredd
 
-Klicka på **Expand** (uppe till höger i detaljpanelen). Studentlistan och verktygsfältet döljs, och profilen — här för **Kari Hansen** — fyller full bredd, vilket gör det enklare att läsa längre historik. Klicka på **Collapse** för att återgå till den delade vyn.
+Klicka på **Visa** (uppe till höger i detaljpanelen). Studentlistan och verktygsfältet döljs, och profilen — här för **Kari Hansen** — fyller full bredd, vilket gör det enklare att läsa längre historik. Klicka på **Dölj** för att återgå till den delade vyn.
 
 <figure>
 
@@ -87,15 +87,15 @@ Klicka på **Expand** (uppe till höger i detaljpanelen). Studentlistan och verk
 
 </figure>
 
-### 6. Filtrera på Study / Programme
+### 6. Filtrera på Studie / program
 
-Gå tillbaka till den delade vyn, klicka på **Study / Programme**, och välj ett studium — här **Helse-, sosial og idrettsfag** — och sedan ett program, till exempel **Bachelor sykepleie**. Knapptexten uppdateras för att visa valet, och en **Clear filters**-länk visas; studentlistan avgränsas till matchande studenter. Samma mönster gäller för **Emne**, **Location** och **Period**.
+Gå tillbaka till den delade vyn, klicka på **Studie / program**, och välj ett studium — här **Helse-, sosial og idrettsfag** — och sedan ett program, till exempel **Bachelor sykepleie**. Knapptexten uppdateras för att visa valet, och en **Rensa filter**-länk visas; studentlistan avgränsas till matchande studenter. Samma mönster gäller för **Emne**, **Plats** och **Period**.
 
 <figure>
 
-![Study/Programme-filter avgränsar studentlistan](./img/TS-15-student-report/06-study-filter.png)
+![Studie/program-filter avgränsar studentlistan](./img/TS-15-student-report/06-study-filter.png)
 
-<figcaption>Study / Programme-filter — avgränsat till Helse-, sosial og idrettsfag / Bachelor sykepleie</figcaption>
+<figcaption>Studie / program-filter — avgränsat till Helse-, sosial og idrettsfag / Bachelor sykepleie</figcaption>
 
 </figure>
 

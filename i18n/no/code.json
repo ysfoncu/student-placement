@@ -384,7 +384,7 @@
     "message": "Skriv inn e-posten din for å legge til kommentaren din"
   },
   "homepage.header.subtitle": {
-    "message": "Trinnvise gjennomganger for hver Student Placement-oppgave"
+    "message": "Trinnvise gjennomganger for hver Student plassering-oppgave"
   },
   "homepage.header.tutorialsButton": {
     "message": "Veiledninger"
@@ -408,9 +408,9 @@
     "message": "Fortell oss hva som fungerte på slutten av hvert scenario — å sende inn tilbakemelding merker det som fullført."
   },
   "homepage.about.title": {
-    "message": "Hva er Student Placement?"
+    "message": "Hva er Student plassering?"
   },
   "homepage.about.description": {
-    "message": "Student Placement hjelper universiteter og høgskoler med å koordinere praksisplasser for studentene sine — fra å sette opp studier og programmer, til å be om og godkjenne kvoter hos praksissteder. Koordinatorer kan fordele studenter, samle inn ønskene deres, og følge alt gjennom fakturering, plasserings- og kapasitetsrapporter."
+    "message": "Student plassering hjelper universiteter og høgskoler med å koordinere praksisplasser for studentene sine — fra å sette opp studier og programmer, til å be om og godkjenne kvoter hos praksissteder. Koordinatorer kan fordele studenter, samle inn ønskene deres, og følge alt gjennom fakturering, plasserings- og kapasitetsrapporter."
   }
 }

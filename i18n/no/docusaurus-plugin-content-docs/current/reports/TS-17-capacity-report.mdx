@@ -8,52 +8,52 @@ sidebar_position: 17
 
 :::info[Scenariooversikt]
 
-- **Side:** Reports → Capacity report
+- **Side:** Rapporter → Kapasitetsrapport
 - **Rolle:** Praksiskoordinator (PK)
 - **Mål:** Bla gjennom kvoteforespørsler, velg én eller flere for å sammenligne forespurt vs. godkjent kapasitet mot hva de tilknyttede plasseringene faktisk forbruker, filtrer listen på status, og utvid et utvalg til full bredde.
-- **Forutsetning:** Innlogget som PK, med kvoteforespørsler i ulike statuser. Denne gjennomgangen bruker de eksisterende forespørslene **Mørkheim kommune / SP101B** (Approved), **Vestmark sykehus / FY101** (Approved) og **Mørkheim kommune / SP101** (Pending).
+- **Forutsetning:** Innlogget som PK, med kvoteforespørsler i ulike statuser. Denne gjennomgangen bruker de eksisterende forespørslene **Mørkheim kommune / SP101B** (Godkjent), **Vestmark sykehus / FY101** (Godkjent) og **Mørkheim kommune / SP101** (Venter).
 
 :::
 
 ## Hva denne siden er
 
-**Capacity report** er den fjerde oppføringen under **Reports** i sidemenyen (ved siden av **Invoicing**, **Student rapport** og **Placement rapport**). I likhet med Placement rapport er dette en visning med **flervalg**: huk av så mange kvoteforespørsler du vil til venstre, og hver av dem får sin egen sammenligningsseksjon stablet i detaljpanelet til høyre.
+**Kapasitetsrapport** er den fjerde oppføringen under **Rapporter** i sidemenyen (ved siden av **Fakturering**, **Studentrapport** og **Plasseringsrapport**). I likhet med Plasseringsrapport er dette en visning med **flervalg**: huk av så mange kvoteforespørsler du vil til venstre, og hver av dem får sin egen sammenligningsseksjon stablet i detaljpanelet til høyre.
 
-Filterlinjen avgrenser forespørselslisten på **Study / Program** (en kaskaderende meny), **Emne**, **Status** (Pending, Approved, Rejected, Fulfilled) og **Period**; et søkefelt matcher også på praksissted, studium, program eller emne. Hvert forespørselskort i listen viser navnet på praksisstedet, et statusmerke, program/emne, og forespurt/godkjent-summer, med **Select all** / **Clear all** over listen. For hver avhukede forespørsel viser detaljpanelet en overskrift (praksissted, studium/program, emne, periode, status) etterfulgt av en **Request details**-tabell — én rad per entitet, med **Requested**, **Approved**, **Consumed** og **Available**, samt en **Total**-rad — og en **Linked placement tasks**-tabell som viser hvilke(n) plassering(er) som trekker på denne forespørselen, med start-/sluttdato og totalt antall tildelte studenter, eller en tom-tilstand-melding hvis ingen er tilknyttet ennå. En **Expand**-knapp øverst til høyre i detaljpanelet skjuler forespørselslisten og verktøylinjen, slik at utvalget kan gjennomgås i full bredde; **Collapse** gjenoppretter delt visning.
+Filterlinjen avgrenser forespørselslisten på **Studium / program** (en kaskaderende meny), **Emne**, **Status** (Venter, Godkjent, Avslått, Oppfylt) og **Periode**; et søkefelt matcher også på praksissted, studium, program eller emne. Hvert forespørselskort i listen viser navnet på praksisstedet, et statusmerke, program/emne, og forespurt/godkjent-summer, med **Velg alle** / **Tøm alle** over listen. For hver avhukede forespørsel viser detaljpanelet en overskrift (praksissted, studium/program, emne, periode, status) etterfulgt av en **Forespørselsdetaljer**-tabell — én rad per entitet, med **Forespurt**, **Godkjent**, **Brukt** og **Tilgjengelig**, samt en **Totalt**-rad — og en **Tilknyttede plasseringsoppgaver**-tabell som viser hvilke(n) plassering(er) som trekker på denne forespørselen, med start-/sluttdato og totalt antall tildelte studenter, eller en tom-tilstand-melding hvis ingen er tilknyttet ennå. En **Vis**-knapp øverst til høyre i detaljpanelet skjuler forespørselslisten og verktøylinjen, slik at utvalget kan gjennomgås i full bredde; **Skjul** gjenoppretter delt visning.
 
-Som standard er rapporten avgrenset til inneværende og neste semester — forespørselslisten viser derfor kun forespørsler med datoer innenfor dette tidsrommet. Bruk **Period**-filteret for å utvide, endre eller fjerne denne avgrensningen og få med andre forespørsler, inkludert tidligere semestre.
+Som standard er rapporten avgrenset til inneværende og neste semester — forespørselslisten viser derfor kun forespørsler med datoer innenfor dette tidsrommet. Bruk **Periode**-filteret for å utvide, endre eller fjerne denne avgrensningen og få med andre forespørsler, inkludert tidligere semestre.
 
 ---
 
 ## Trinn
 
-### 1. Start på Dashboard
+### 1. Start på Dashbord
 
-Etter innlogging kommer du til **Dashboard**.
+Etter innlogging kommer du til **Dashbord**.
 
 <figure>
 
-![Dashboard — startpunkt](./img/TS-17-capacity-report/01-dashboard.png)
+![Dashbord — startpunkt](./img/TS-17-capacity-report/01-dashboard.png)
 
-<figcaption>Startpunkt — Dashboard</figcaption>
+<figcaption>Startpunkt — Dashbord</figcaption>
 
 </figure>
 
-### 2. Åpne Reports → Capacity report
+### 2. Åpne Rapporter → Kapasitetsrapport
 
-Klikk på **Reports** i sidemenyen for å utvide den, og klikk deretter på **Capacity report**. Siden åpnes med filterlinjen og en avkrysningsliste over kvoteforespørsler til venstre; ingenting er valgt ennå, så høyre panel viser *"Select one or more quota requests."*
+Klikk på **Rapporter** i sidemenyen for å utvide den, og klikk deretter på **Kapasitetsrapport**. Siden åpnes med filterlinjen og en avkrysningsliste over kvoteforespørsler til venstre; ingenting er valgt ennå, så høyre panel viser *"Velg én eller flere kvoteforespørsler."*
 
 <figure>
 
 ![Kapasitetsrapport-oversikt med forespørselslisten](./img/TS-17-capacity-report/02-capacity-report-overview.png)
 
-<figcaption>Capacity report — forespørselsliste og filterlinje, ingenting valgt</figcaption>
+<figcaption>Kapasitetsrapport — forespørselsliste og filterlinje, ingenting valgt</figcaption>
 
 </figure>
 
 ### 3. Velg én forespørsel
 
-Huk av en forespørsel i listen — her **Mørkheim kommune / SP101B**. Seksjonen lastes til høyre: overskriften (studium/program, emne **SP101B**, periode, **Approved**-merke) etterfulgt av **Request details** med tall per entitet og en **Total**-rad (200 godkjent, 3 forbrukt, 197 tilgjengelig), deretter **Linked placement tasks (1)** som viser plasseringen **SP101b** med 3 tildelte studenter.
+Huk av en forespørsel i listen — her **Mørkheim kommune / SP101B**. Seksjonen lastes til høyre: overskriften (studium/program, emne **SP101B**, periode, **Godkjent**-merke) etterfulgt av **Forespørselsdetaljer** med tall per entitet og en **Totalt**-rad (200 godkjent, 3 forbrukt, 197 tilgjengelig), deretter **Tilknyttede plasseringsoppgaver (1)** som viser plasseringen **SP101b** med 3 tildelte studenter.
 
 <figure>
 
@@ -77,19 +77,19 @@ Huk av en forespørsel til — her **Vestmark sykehus / FY101** — mens SP101B 
 
 ### 5. Filtrer på Status
 
-Fjern utvalget, klikk på statusnedtrekket, og velg **Pending**. Listen avgrenses til den ene matchende forespørselen — **Mørkheim kommune / SP101**, forespurt 40 / godkjent 0. Å velge den viser et **Pending**-merke, en **Available** på 0 (ingenting godkjent ennå), og *"No placement tasks linked to this request"* siden ingenting er tildelt mot den ennå. Samme mønster gjelder for **Study / Program**, **Emne** og **Period**.
+Fjern utvalget, klikk på statusnedtrekket, og velg **Venter**. Listen avgrenses til den ene matchende forespørselen — **Mørkheim kommune / SP101**, forespurt 40 / godkjent 0. Å velge den viser et **Venter**-merke, en **Tilgjengelig** på 0 (ingenting godkjent ennå), og *"Ingen plasseringsoppgaver er knyttet til denne forespørselen"* siden ingenting er tildelt mot den ennå. Samme mønster gjelder for **Studium / program**, **Emne** og **Periode**.
 
 <figure>
 
-![Statusfilter avgrenset til Pending, viser forespørselen med tom tilstand](./img/TS-17-capacity-report/05-pending-filter.png)
+![Statusfilter avgrenset til Venter, viser forespørselen med tom tilstand](./img/TS-17-capacity-report/05-pending-filter.png)
 
-<figcaption>Statusfilter — Pending-forespørsel uten godkjent kapasitet eller tilknyttede plasseringer ennå</figcaption>
+<figcaption>Statusfilter — Venter-forespørsel uten godkjent kapasitet eller tilknyttede plasseringer ennå</figcaption>
 
 </figure>
 
 ### 6. Utvid til full bredde
 
-Fjern filteret, velg en forespørsel, og klikk deretter på **Expand** (øverst til høyre i detaljpanelet). Forespørselslisten og verktøylinjen skjules, og de(n) valgte seksjonen(e) fyller full bredde, noe som gjør brede sammenligningstabeller enklere å lese. Klikk på **Collapse** for å gå tilbake til delt visning.
+Fjern filteret, velg en forespørsel, og klikk deretter på **Vis** (øverst til høyre i detaljpanelet). Forespørselslisten og verktøylinjen skjules, og de(n) valgte seksjonen(e) fyller full bredde, noe som gjør brede sammenligningstabeller enklere å lese. Klikk på **Skjul** for å gå tilbake til delt visning.
 
 <figure>
 
