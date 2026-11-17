@@ -1,10 +1,10 @@
 ---
-title: '03 · Innstillinger - Dashbordelementer'
-sidebar_label: '03 · Innstillinger - Dashbordelementer'
+title: '03 · Innstillinger - Dashbord-elementer'
+sidebar_label: '03 · Innstillinger - Dashbord-elementer'
 sidebar_position: 3
 ---
 
-# Testscenario 03 — Innstillinger - Dashbordelementer
+# Testscenario 03 — Innstillinger - Dashbord-elementer
 
 :::info[Scenariooversikt]
 
@@ -16,9 +16,11 @@ sidebar_position: 3
 
 ## Hva denne siden er
 
-**Dashbord-elementer** (under Innstillinger) styrer hvilke widgeter som vises på ditt Dashbord
- (Plasseringsoversikt, Kvoteforespørsler, Oppgaver, Nylige aktiviteter osv.). Å slå et element av eller på trer i kraft
- **umiddelbart** — det finnes ingen egen lagring. Minst ett element må forbli valgt.
+**Dashbord-elementer** (under Innstillinger) styrer hvilke widgeter som vises på ditt Dashbord. Det finnes
+ seks elementer: **Praksisstedsoversikt**, **Plasseringsoversikt**, **Oppgaver**, **Nylige aktiviteter**,
+ **Plasseringsfremdrift** og **Årlig plasseringsoversikt**. Kortene i **Studentoversikt** øverst på
+ Dashbord vises alltid. Å slå et element av eller på trer i kraft **umiddelbart** — det finnes ingen egen
+ lagring. Minst ett element må forbli på.
 
 ---
 
@@ -26,68 +28,77 @@ sidebar_position: 3
 
 ### 1. Start på Dashbord
 
-Merk deg widgetene som vises nå — inkludert widgeten **Kvoteforespørsler**.
+Legg merke til widgetene som vises nå — blant annet widgeten **Oppgaver**.
 
 <figure>
 
-![Dashbord før — Kvoteforespørsler synlig](./img/TS-03-dashboard-items/01-dashboard-before.png)
+![Dashbord før — Oppgaver synlig](./img/TS-03-dashboard-items/01-dashboard-before.png)
 
-<figcaption>Dashbord før — Kvoteforespørsler-widgeten er synlig</figcaption>
+<figcaption>Dashbord før — widgeten Oppgaver er synlig</figcaption>
 
 </figure>
 
 ### 2. Åpne Innstillinger → Dashbord-elementer
 
-Klikk på **Innstillinger** i sidemenyen, deretter på **Dashbord-elementer**. Hver widget er et kort med en
- avkrysningsboks og et øyeikon; overskriften viser hvor mange av elementene som er valgt.
+Klikk på **Innstillinger** i sidemenyen, og deretter på **Dashbord-elementer**. Elementene vises i en
+ nummerert tabell med en kort beskrivelse og en **På/Av**-bryter i kolonnen **Status**. Over tabellen
+ viser en teller hvor mange elementer som er på (f.eks. *6 av 6 elementer valgt*).
 
 <figure>
 
-![Standardvalg for Dashbord-elementer](./img/TS-03-dashboard-items/02-dashboard-items.png)
+![Dashbord-elementer — alle elementer på](./img/TS-03-dashboard-items/02-dashboard-items.png)
 
-<figcaption>Dashbord-elementer — gjeldende valg</figcaption>
+<figcaption>Dashbord-elementer — nåværende utvalg</figcaption>
 
 </figure>
 
 ### 3. Slå av et element
 
-Klikk på avkrysningsboksen for **Kvoteforespørsler** for å velge den bort. Kortet blir grått, ikonet endres til
- **skjult** (overstrøket øye), og antallet synker (f.eks. *5 of 7 items selected*). Endringen lagres umiddelbart.
+Klikk på bryteren for **Oppgaver**. Statusen endres til **Av**, telleren går ned til *5 av 6 elementer
+ valgt*, og bekreftelsen *"Dashbordinnstillinger lagret"* vises. Endringen lagres umiddelbart.
 
 <figure>
 
-![Kvoteforespørsler slått av](./img/TS-03-dashboard-items/03-item-toggled-off.png)
+![Oppgaver slått av](./img/TS-03-dashboard-items/03-item-toggled-off.png)
 
-<figcaption>Kvoteforespørsler valgt bort — nå skjult</figcaption>
+<figcaption>Oppgaver slått av — 5 av 6 elementer valgt</figcaption>
 
 </figure>
 
 ### 4. Bekreft på Dashbord
 
-Gå tilbake til **Dashbord** — widgeten **Kvoteforespørsler** vises ikke lenger.
+Gå tilbake til **Dashbord** — widgeten **Oppgaver** vises ikke lenger.
 
 <figure>
 
-![Dashbord etter — Kvoteforespørsler skjult](./img/TS-03-dashboard-items/04-dashboard-after.png)
+![Dashbord etter — Oppgaver skjult](./img/TS-03-dashboard-items/04-dashboard-after.png)
 
-<figcaption>Dashbord etter — Kvoteforespørsler-widgeten er borte</figcaption>
+<figcaption>Dashbord etter — widgeten Oppgaver er borte</figcaption>
 
 </figure>
+
+For å vise den igjen slår du **Oppgaver** på igjen under Innstillinger → Dashbord-elementer.
 
 ---
 
 ## Validering — minst ett element
 
-Du kan ikke skjule alle widgetene. Når bare ett element er valgt, blokkeres forsøk på å velge det bort,
- og en rød melding vises: *"Du må velge minst ett dashbord-element som skal vises."*
+Du kan ikke skjule alle widgetene. Når bare ett element er på, blir det blokkert å slå det av, og en rød
+ melding vises: *"Du må velge minst ett dashbordelement som skal vises."*
 
 <figure>
 
-![Valideringsfeil for minst ett element](./img/TS-03-dashboard-items/05-validation.png)
+![Validering — minst ett element](./img/TS-03-dashboard-items/05-validation.png)
 
-<figcaption>Å velge bort det siste elementet blokkeres</figcaption>
+<figcaption>Det siste elementet kan ikke slås av</figcaption>
 
 </figure>
+
+## Tips — visningsinnstillinger for widgeter
+
+De fleste widgetene på Dashbord har sitt eget **tannhjulikon**. Det åpner **Visningsinnstillinger** for
+ widgeten — for eksempel hvor mange oppføringer som skal vises (widgeten **Oppgaver** tilbyr *3*, *5* eller
+ *10 oppgaver*). Det skjuler ikke widgeten; bruk Dashbord-elementer til det.
 
 ---
 

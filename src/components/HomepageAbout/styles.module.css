@@ -1,12 +1,197 @@
-.about {
-  padding: 3rem 0;
-  width: 100%;
-  background: var(--ifm-color-emphasis-100);
+.section {
+  padding: 2.5rem 0 0;
 }
 
-.container {
-  max-width: 720px;
+.inner,
+.problemGrid {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
-  text-align: center;
+}
+
+.eyebrow,
+.eyebrowLight,
+.stepLabel,
+.qAudience {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.25rem;
+}
+
+/* Problem + overview card */
+.problem {
+  padding: 3rem 0 0.5rem;
+}
+
+.problemGrid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.problemText {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.overviewCard {
+  border-radius: 14px;
+  padding: 1.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, #4b3fd6, #8a3fe0);
+}
+
+.eyebrowLight {
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+}
+
+.overviewCard ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.overviewCard li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.overviewCard li:last-child {
+  border-bottom: none;
+}
+
+/* Three questions */
+.questions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.question {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.question:last-child {
+  border-bottom: none;
+}
+
+.qNum {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ifm-color-primary);
+  min-width: 2.75rem;
+}
+
+.qTitle {
+  margin-bottom: 0.4rem;
+}
+
+.qBody {
+  margin-bottom: 0.5rem;
+}
+
+.qAudience {
+  color: var(--ifm-color-primary);
+}
+
+/* Five steps */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.step {
+  padding: 1.25rem 1rem;
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.step:last-child {
+  border-right: none;
+}
+
+.step p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.stepLabel {
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.35rem;
+}
+
+.stepTitle {
+  font-family: Georgia, 'Times New Roman', serif;
+  margin-bottom: 0.5rem;
+}
+
+/* Pilot CTA */
+.pilot {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 14px;
+  background: #151a2d;
+  color: #d6d9e6;
+}
+
+.pilot h2,
+.pilot h3 {
+  color: #fff;
+}
+
+.pilotTitle {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.pilot p {
+  margin: 0;
+}
+
+.pilotContact {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .problemGrid,
+  .pilot {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .step {
+    border-right: none;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+
+  .step:last-child {
+    border-bottom: none;
+  }
+
+  .pilotContact {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
 }

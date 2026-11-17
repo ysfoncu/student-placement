@@ -4,98 +4,101 @@ sidebar_label: '17 · Rapporter - Kapacitetsrapport'
 sidebar_position: 17
 ---
 
-# Rapporter - Kapacitetsrapport
+# Testscenario 17 — Rapporter - Kapacitetsrapport
 
 :::info[Scenarioöversikt]
 
 - **Sida:** Rapporter → Kapacitetsrapport
 - **Roll:** Placeringskoordinator (PK)
-- **Mål:** Bläddra bland kvotförfrågningar, välj en eller flera för att jämföra begärd vs. godkänd kapacitet mot vad de länkade placeringarna faktiskt förbrukar, filtrera listan på status, och expandera ett urval till full bredd.
-- **Förutsättning:** Inloggad som PK, med kvotförfrågningar i olika statusar. Den här genomgången använder de befintliga förfrågningarna **Mørkheim kommune / SP101B** (Godkänd), **Vestmark sykehus / FY101** (Godkänd) och **Mørkheim kommune / SP101** (Väntande).
+- **Mål:** Se hur många praktikplatser varje enhet erbjuder för en studie, ett program eller ett emne, hur många som används av placeringar och hur många som finns kvar.
+- **Förutsättning:** Inloggad som PK, med enheter kopplade till programmet och emnet (se *Testscenario 04–05*). Den här genomgången använder **Fysioterapeutprogrammet** under **hösten 2026**, där placeringen från *Testscenario 08* använder 4 platser på **KLINIK-1**.
 
 :::
 
 ## Vad den här sidan är
 
-**Kapacitetsrapport** är den fjärde posten under **Rapporter** i sidofältet (bredvid **Fakturering**, **Studentrapport** och **Placeringsrapport**). Liksom Placeringsrapport är detta en vy med **flerval**: kryssa för så många kvotförfrågningar du vill till vänster, och var och en får sin egen jämförelsesektion staplad i detaljpanelen till höger.
+**Kapacitetsrapport** (under **Rapporter**) öppnar **Kapacitetsplaneringsrapport** — praktikplatskapacitet per
+ studie, program och emne, och hur många platser placeringarna använder.
 
-Filterfältet avgränsar förfrågningslistan på **Studie / program** (en kaskadmeny), **Emne**, **Status** (Väntande, Godkänd, Avslagen, Uppfylld) och **Period**; ett sökfält matchar också på praktikplats, studium, program eller emne. Varje förfrågningskort i listan visar praktikplatsens namn, ett statusmärke, program/emne, samt begärda/godkända summor, med **Markera alla** / **Rensa alla** ovanför listan. För varje ikryssad förfrågan visar detaljpanelen en rubrik (praktikplats, studium/program, emne, period, status) följt av en **Förfrågningsuppgifter**-tabell — en rad per entitet, med **Begärd**, **Godkänd**, **Förbrukad** och **Tillgänglig**, samt en **Totalt**-rad — och en **Länkade placeringsuppgifter**-tabell som visar vilka placeringar som drar på denna förfrågan, med start-/slutdatum och totalt antal tilldelade studenter, eller ett tomt-tillstånd-meddelande om inga är länkade ännu. En **Visa**-knapp uppe till höger i detaljpanelen döljer förfrågningslistan och verktygsfältet så att urvalet kan granskas i full bredd; **Dölj** återställer den delade vyn.
+- **År och termin** (uppe till höger) — välj ett år (t.ex. *2024–2027*) och **Vår** eller **Höst**.
+- **Träd** (till vänster) — alla studier med program och emnen. Talet vid ett program eller emne är hur många
+  enheter som tar emot det. Använd sökrutan för att hitta en studie, ett program eller ett emne.
+- **Rapport** (till höger) — för det valda objektet, en sektion per emne: rubriken visar program · emne,
+  terminen med antal placeringar för emnet och summorna **Platser**, **Använda** och **Kvar**. Tabellen visar
+  enheterna, grupperade efter praktikställe:
 
-Som standard är rapporten avgränsad till innevarande och nästa termin — förfrågningslistan visar därför bara förfrågningar vars datum faller inom det tidsspannet. Använd filtret **Period** för att utöka, ändra eller ta bort denna avgränsning och få med andra förfrågningar, inklusive tidigare terminer.
+| Kolumn | Innehåll |
+|---|---|
+| **Praktikställe / Enhet** | Praktikstället (t.ex. *PRAKSIS-1*) och dess enheter. |
+| **Period** | Hur enhetens platser räknas, t.ex. *Yearly · resets 01-01* (årligen, nollställs 01-01). |
+| **Platser** | Platser enheten erbjuder för detta program och emne. |
+| **Använda** | Platser som tagits av placeringar. |
+| **Kvar** | Platser som fortfarande är lediga. |
+| **Används av placeringar** | Placeringarna som använder enheten, med antal studenter inom parentes — klicka för att öppna placeringen. |
 
 ---
 
 ## Steg
 
-### 1. Starta på Instrumentpanelen
+### 1. Öppna Rapporter → Kapacitetsrapport
 
-Efter inloggning kommer du till **Instrumentpanelen**.
+Klicka på **Rapporter** i sidofältet och sedan på **Kapacitetsrapport**. Trädet visar studier, program och
+ emnen; höger panel ber dig välja en studie, ett program eller ett emne för att se enheterna och användningen.
+ Året är **2026** och terminen **Höst**.
 
 <figure>
 
-![Instrumentpanelen — startpunkt](./img/TS-17-capacity-report/01-dashboard.png)
+![Kapacitetsplaneringsrapport — inget valt](./img/TS-17-capacity-report/01-start.png)
 
-<figcaption>Startpunkt — Instrumentpanelen</figcaption>
+<figcaption>Kapacitetsplaneringsrapport — välj en studie, ett program eller ett emne i trädet</figcaption>
 
 </figure>
 
-### 2. Öppna Rapporter → Kapacitetsrapport
+### 2. Välj ett emne
 
-Klicka på **Rapporter** i sidofältet för att expandera det, och klicka sedan på **Kapacitetsrapport**. Sidan öppnas med filterfältet och en kryssrutelista över kvotförfrågningar till vänster; inget är valt ännu, så den högra panelen visar *"Välj en eller flera kvotförfrågningar."*
+Klicka på emnet **Fysioterapi - professionell utveckling och verksamhetsförlagd utbildning**. Rapporten visar
+ *Autumn 2026 · 1 placering för emnet* och summorna **Platser 39 · Använda 4 · Kvar 35**:
+
+- **PRAKSIS-1 → Avdeling 1** — 0 platser.
+- **PRAKSIS-1 → KLINIK-1** — 9 platser, 4 använda, 5 kvar; används av placeringen *Hälsovetenskap ·
+  Fysioterapeutprogrammet · Fysioterapi - professionell … (4)*.
+- **Test Sykehus → Kirurgi** — 30 platser, inga använda.
+
+Klicka på placeringens namn för att öppna placeringen.
 
 <figure>
 
-![Översikt över kapacitetsrapporten med förfrågningslistan](./img/TS-17-capacity-report/02-capacity-report-overview.png)
+![Rapport för ett emne](./img/TS-17-capacity-report/02-emne.png)
 
-<figcaption>Kapacitetsrapport — förfrågningslista och filterfält, inget valt</figcaption>
+<figcaption>Ett emne — 39 platser, 4 använda av en placering på KLINIK-1</figcaption>
 
 </figure>
 
-### 3. Välj en förfrågan
+### 3. Välj ett program
 
-Kryssa för en förfrågan i listan — här **Mørkheim kommune / SP101B**. Dess sektion laddas till höger: rubriken (studium/program, emne **SP101B**, period, **Godkänd**-märke) följt av **Förfrågningsuppgifter** med siffror per entitet och en **Totalt**-rad (200 godkänt, 3 förbrukat, 197 tillgängligt), sedan **Länkade placeringsuppgifter (1)** som visar placeringen **SP101b** med 3 tilldelade studenter.
+Klicka på **Fysioterapeutprogrammet**. Rapporten visar en sektion för varje emne i programmet, under varandra.
+ Här visar båda emnena samma enheter och siffror — det andra emnet (*Fysioterapi – anatomi och fysiologi*,
+ *0 placeringar för emnet*) visar också *Använda 4* på KLINIK-1.
 
 <figure>
 
-![En förfrågan vald visar jämförelsetabellen](./img/TS-17-capacity-report/03-single-selected.png)
+![Rapport för ett program](./img/TS-17-capacity-report/03-program.png)
 
-<figcaption>SP101B vald — förfrågningsdetaljer och länkad placeringsuppgift</figcaption>
+<figcaption>Ett program — en sektion per emne</figcaption>
 
 </figure>
 
-### 4. Välj en andra förfrågan att jämföra
+### 4. Sök och byt termin
 
-Kryssa för ytterligare en förfrågan — här **Vestmark sykehus / FY101** — medan SP101B fortfarande är ikryssad. Dess sektion läggs till ovanför SP101B:s i detaljpanelen, så att båda förfrågningarnas kapacitetsjämförelser visas tillsammans.
-
-<figure>
-
-![Två förfrågningar valda, sektioner staplade](./img/TS-17-capacity-report/04-multi-selected.png)
-
-<figcaption>FY101 och SP101B båda valda — deras sektioner staplas i detaljpanelen</figcaption>
-
-</figure>
-
-### 5. Filtrera på Status
-
-Rensa urvalet, klicka på statusrullgardinen, och välj **Väntande**. Listan avgränsas till den enda matchande förfrågan — **Mørkheim kommune / SP101**, begärt 40 / godkänt 0. Att välja den visar ett **Väntande**-märke, ett **Tillgänglig** på 0 (inget godkänt ännu), och *"Inga placeringsuppgifter är länkade till den här förfrågan"* eftersom inget har tilldelats mot den ännu. Samma mönster gäller för **Studie / program**, **Emne** och **Period**.
+Skriv i sökrutan — till exempel `Sjuk` — för att bara visa den matchande delen av trädet. Använd **Vår** /
+ **Höst** och årsmenyn för att titta på en annan termin; enheter som nollställs årligen visar samma användning i
+ båda terminerna under året.
 
 <figure>
 
-![Statusfilter avgränsat till Väntande, visar förfrågan med tomt tillstånd](./img/TS-17-capacity-report/05-pending-filter.png)
+![Sök i trädet](./img/TS-17-capacity-report/04-search.png)
 
-<figcaption>Statusfilter — Väntande-förfrågan utan godkänd kapacitet eller länkade placeringar ännu</figcaption>
-
-</figure>
-
-### 6. Expandera till full bredd
-
-Rensa filtret, välj en förfrågan, och klicka sedan på **Visa** (uppe till höger i detaljpanelen). Förfrågningslistan och verktygsfältet döljs, och den/de valda sektionen/sektionerna fyller full bredd, vilket gör breda jämförelsetabeller enklare att läsa. Klicka på **Dölj** för att återgå till den delade vyn.
-
-<figure>
-
-![Expanderad förfrågningsdetalj i full bredd](./img/TS-17-capacity-report/06-expanded.png)
-
-<figcaption>Expanderad vy — SP101B:s förfrågningsdetaljer och länkade placeringsuppgift i full bredd</figcaption>
+<figcaption>Sök — bara Sjuksköterskeprogrammet och dess emnen visas</figcaption>
 
 </figure>
 
@@ -103,7 +106,8 @@ Rensa filtret, välj en förfrågan, och klicka sedan på **Visa** (uppe till h�
 
 ## Slutresultat
 
-Koordinatorn kan kryssa för valfri kombination av kvotförfrågningar och se begärd vs. godkänd vs. förbrukad kapacitet sida vid sida, tillsammans med vilka placeringar som drar på varje förfrågan — avgränsat på studium, program, emne, status eller period, och expanderat till full bredd för en närmare titt.
+Koordinatorn kan för valfri studie, program eller emne och termin se hur många platser varje enhet erbjuder, hur
+ många som används och av vilken placering, och hur många som finns kvar.
 
 ---
 

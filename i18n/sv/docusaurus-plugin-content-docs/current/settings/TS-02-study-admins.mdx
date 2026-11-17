@@ -10,8 +10,8 @@ sidebar_position: 2
 
 - **Sida:** Inställningar → Studieadministratörer
 - **Roll:** Placeringskoordinator (PK)
-- **Mål:** Skapa en studieadministratör från ett tomt utgångsläge och tilldela hen en studie och dess program.
-- **Förutsättning:** Minst en studie med program finns (skapa en först med *Testscenario 01*). Inga studieadministratörer är definierade ännu.
+- **Mål:** Skapa en studieadministratör och tilldela hen en studie och dess program.
+- **Förutsättning:** Minst en studie med program finns (skapa en först med *Testscenario 01*). Sidan kan redan visa andra administratörer — flödet är detsamma oavsett.
 
 :::
 
@@ -31,38 +31,37 @@ Efter inloggningen hamnar du på **Instrumentpanelen**.
 
 <figure>
 
-![Instrumentpanelen — utgångspunkt](./img/TS-02-study-admins/01-dashboard.png)
+![Instrumentpanel — utgångspunkt](./img/TS-02-study-admins/01-dashboard.png)
 
 <figcaption>Utgångspunkt — Instrumentpanelen</figcaption>
 
 </figure>
 
-### 2. Öppna Inställningar → Studieadministratörer (tom)
+### 2. Öppna Inställningar → Studieadministratörer
 
-Klicka på **Inställningar** i sidofältet och välj sedan **Studieadministratörer**. Sidan är tom:
- *"Inga studieadministratörer har lagts till än — klicka på ”Lägg till administratör” för att skapa din första administratör."*
+Klicka på **Inställningar** i sidofältet och välj sedan fliken **Studieadministratörer**. Varje befintlig administratör visas som ett kort med namn, en etikett för **antal program**, e-post, studie och de program hen ansvarar för, samt ikoner för redigering (penna) och borttagning (papperskorg).
 
 <figure>
 
-![Tom sida för Studieadministratörer](./img/TS-02-study-admins/02-admins-empty.png)
+![Lista över studieadministratörer](./img/TS-02-study-admins/02-admins-list.png)
 
-<figcaption>Studieadministratörer — tomt utgångsläge</figcaption>
+<figcaption>Studieadministratörer — utgångsläge med en befintlig administratör</figcaption>
 
 </figure>
 
 ### 3. Lägg till en administratör
 
-Klicka på **Lägg till administratör** (uppe till höger) och fyll i formuläret:
+Klicka på **Lägg till administratör** (uppe till höger). Ett formulär öppnas överst i listan:
 
-1.  Ange administratörens **namn** — här `Anne Larsen`.
-2.  Ange administratörens **e-postadress** — här `anne.larsen@moso.no`.
-3.  Välj en **studie** i rullgardinsmenyn (t.ex. *Helse-, sosial og idrettsfag*).
-4.  Bocka för de **program** som administratören ansvarar för — här **Nursing** och **Physiotherapy**.
+1.  Ange administratörens **namn** (*"Ange administratörens namn (t.ex. Anne Larsen)"*) — här `Anne Larsen`.
+2.  Ange administratörens **e-post** (*"Ange administratörens e-post (t.ex. anne.larsen@example.com)"*) — här `anne.larsen@example.com`.
+3.  Välj en studie i listrutan **Välj en studie** — här *Hälsovetenskap*.
+4.  När en studie är vald visas listan *"Välj program för den här administratören:"* med studiens program. Kryssa i de program administratören ska ansvara för — här **Sjuksköterskeprogrammet** och **Fysioterapeutprogrammet**.
 5.  Klicka på **Lägg till**.
 
 <figure>
 
-![Formuläret för att lägga till administratör ifyllt](./img/TS-02-study-admins/03-add-admin.png)
+![Formuläret Lägg till administratör ifyllt](./img/TS-02-study-admins/03-add-admin.png)
 
 <figcaption>Lägg till administratör — namn, e-post, studie och program valda</figcaption>
 
@@ -72,14 +71,42 @@ Klicka på **Lägg till administratör** (uppe till höger) och fyll i formulär
 
 ## Slutresultat
 
-Den nya administratören visas i listan med en etikett för **antal program**, sin e-postadress, studien och de
+Den nya administratören visas längst ned i listan med etiketten **2 program**, sin e-postadress, studien och de
  program som hen ansvarar för.
 
 <figure>
 
-![Slutläge — administratör skapad](./img/TS-02-study-admins/04-final.png)
+![Slutresultat — administratör skapad](./img/TS-02-study-admins/04-final.png)
 
-<figcaption>Slutläge — Anne Larsen skapad med 2 program</figcaption>
+<figcaption>Sluttillstånd — Anne Larsen skapad med 2 program</figcaption>
+
+</figure>
+
+## Redigera en administratör (valfritt)
+
+Klicka på **pennikonen** på ett administratörskort. Kortet blir ett redigeringsformulär där du kan ändra
+ **namn**, **studie** och ikryssade **program**. E-postadressen kan inte ändras här. Klicka på **Spara** för
+ att tillämpa ändringarna eller **Avbryt** för att förkasta dem.
+
+<figure>
+
+![Redigeringsformulär för administratör](./img/TS-02-study-admins/05-edit-admin.png)
+
+<figcaption>Redigera administratör — namn, studie och program</figcaption>
+
+</figure>
+
+## Ta bort en administratör (valfritt)
+
+Klicka på **papperskorgsikonen** på ett administratörskort. En bekräftelsedialog öppnas: *"Ta bort
+ studieadministratör? Administratören ”Anne Larsen” tas bort permanent."* Klicka på **Ta bort** för att
+ bekräfta eller **Avbryt** för att behålla administratören.
+
+<figure>
+
+![Bekräftelse för borttagning av studieadministratör](./img/TS-02-study-admins/06-delete-confirm.png)
+
+<figcaption>Ta bort studieadministratör — bekräftelsedialog</figcaption>
 
 </figure>
 

@@ -7,17 +7,13 @@
     "message": "Inställningar",
     "description": "The label for category 'Settings' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.Quota Request": {
-    "message": "Kvotförfrågan",
-    "description": "The label for category 'Quota Request' in sidebar 'tutorialSidebar'"
-  },
   "sidebar.tutorialSidebar.category.Student Placement": {
     "message": "Student plassering",
     "description": "The label for category 'Student Placement' in sidebar 'tutorialSidebar'"
   },
-  "sidebar.tutorialSidebar.category.Custom workflows": {
-    "message": "Anpassade arbetsflöden",
-    "description": "The label for category 'Custom workflows' in sidebar 'tutorialSidebar'"
+  "sidebar.tutorialSidebar.category.Priorities": {
+    "message": "Prioriteringar",
+    "description": "The label for category 'Priorities' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Reports": {
     "message": "Rapporter",

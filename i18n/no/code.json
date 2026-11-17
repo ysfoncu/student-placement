@@ -327,10 +327,10 @@
     "description": "The title of the tag list page"
   },
   "homepage.layout.title": {
-    "message": "Hei fra {siteTitle}"
+    "message": "Praksisplassering, organisert"
   },
   "homepage.layout.description": {
-    "message": "Beskrivelse som legges i en meta-tag i <head />"
+    "message": "Studenter, praksisplasser, prioriteringer, planer og kostnader i én oversikt — fra første student til endelig rapport."
   },
   "homepage.welcome.form.invalidEmail": {
     "message": "Vennligst skriv inn en gyldig e-postadresse."
@@ -383,9 +383,6 @@
   "scenarioFeedback.form.title": {
     "message": "Skriv inn e-posten din for å legge til kommentaren din"
   },
-  "homepage.header.subtitle": {
-    "message": "Trinnvise gjennomganger for hver Student plassering-oppgave"
-  },
   "homepage.header.tutorialsButton": {
     "message": "Veiledninger"
   },
@@ -407,10 +404,121 @@
   "homepage.values.feedback.description": {
     "message": "Fortell oss hva som fungerte på slutten av hvert scenario — å sende inn tilbakemelding merker det som fullført."
   },
-  "homepage.about.title": {
-    "message": "Hva er Student plassering?"
+  "homepage.header.headline": {
+    "message": "Praksisplassering, organisert fra start til slutt."
   },
-  "homepage.about.description": {
-    "message": "Student plassering hjelper universiteter og høgskoler med å koordinere praksisplasser for studentene sine — fra å sette opp studier og programmer, til å be om og godkjenne kvoter hos praksissteder. Koordinatorer kan fordele studenter, samle inn ønskene deres, og følge alt gjennom fakturering, plasserings- og kapasitetsrapporter."
+  "homepage.header.leadHighlight": {
+    "message": "Fra første student til endelig rapport."
+  },
+  "homepage.header.lead": {
+    "message": "Studenter, praksisplasser, prioriteringer, planer og kostnader i én oversikt. Ingenting hviler på én person."
+  },
+  "homepage.about.problem": {
+    "message": "Helseutdanninger plasserer studenter i sykehus og kommunale tjenester med regneark, e-post og én koordinators hukommelse. Det fungerer helt til praksiskoordinatoren er syk, en studentkoordinator kutter plasser uken før oppstart, eller en student spør hvorfor en medstudent fikk plassen. Dette er arbeidsoversikten for de tre situasjonene."
+  },
+  "homepage.about.overview.title": {
+    "message": "Én oversikt holder"
+  },
+  "homepage.about.overview.unplaced": {
+    "message": "Hvem som fortsatt mangler plass, per emne"
+  },
+  "homepage.about.overview.capacity": {
+    "message": "Hva hver enhet kan ta imot, per periode"
+  },
+  "homepage.about.overview.decisions": {
+    "message": "Prioriteringsvedtak, med begrunnelse"
+  },
+  "homepage.about.overview.plan": {
+    "message": "Planen: veileder, uker og kostnad"
+  },
+  "homepage.questions.title": {
+    "message": "Tre spørsmål den besvarer"
+  },
+  "homepage.questions.q1.title": {
+    "message": "Hvem mangler fortsatt plass — og hvor tar plassene slutt?"
+  },
+  "homepage.questions.q1.body": {
+    "message": "Ventende studenter per emne, stilt opp mot det hver enhet har sagt den kan ta imot. Gapet er synlig mens det fortsatt er tid til å spørre en studentkoordinator om flere plasser."
+  },
+  "homepage.questions.q1.audience": {
+    "message": "Programansvarlig får svaret uten å måtte etterlyse det"
+  },
+  "homepage.questions.q2.title": {
+    "message": "En studentkoordinator kutter plasser. Hva nå?"
+  },
+  "homepage.questions.q2.body": {
+    "message": "Senk antall plasser og se «Over by N» med studentene som er plassert der. Ta dem av, plasser dem der det er rom, og angre en feil plassering. Det varsler, men blokkerer aldri."
+  },
+  "homepage.questions.q2.audience": {
+    "message": "For praksiskoordinatoren, på dagen det skjer"
+  },
+  "homepage.questions.q3.title": {
+    "message": "Hvorfor fikk denne studenten den plassen?"
+  },
+  "homepage.questions.q3.body": {
+    "message": "Åpne søknaden, poengene, vedtaket og begrunnelsen — ikke en innboks. Et avslag kan ikke lagres uten begrunnelse, og vedtakene publiseres samlet."
+  },
+  "homepage.questions.q3.audience": {
+    "message": "Svaret avhenger ikke av hvem som er på kontoret"
+  },
+  "homepage.steps.title": {
+    "message": "Ett semester, én oversikt"
+  },
+  "homepage.steps.setup.label": {
+    "message": "Sett opp"
+  },
+  "homepage.steps.setup.title": {
+    "message": "Definer én gang"
+  },
+  "homepage.steps.setup.body": {
+    "message": "Studier, programmer og emner. Enheter oppgir plasser per program, emne og periode; kontakter og krav ligger på enheten."
+  },
+  "homepage.steps.prioritize.label": {
+    "message": "Prioriter"
+  },
+  "homepage.steps.prioritize.title": {
+    "message": "Beslutt åpent"
+  },
+  "homepage.steps.prioritize.body": {
+    "message": "Én liste per emne med varsel, frist og melding. Søknader har begrunnelser, poeng og dokumenter; vedtak publiseres samlet."
+  },
+  "homepage.steps.place.label": {
+    "message": "Plasser"
+  },
+  "homepage.steps.place.title": {
+    "message": "Bygg planen"
+  },
+  "homepage.steps.place.body": {
+    "message": "Velg enheter og plasser; plasser manuelt eller «Topp N etter poeng»; oppgi en veileder fra enhetens egne kontakter."
+  },
+  "homepage.steps.publish.label": {
+    "message": "Publiser"
+  },
+  "homepage.steps.publish.title": {
+    "message": "Enheter først"
+  },
+  "homepage.steps.publish.body": {
+    "message": "Publiser til enhetene, deretter til studentene. Det låser planen og registrerer steget; Rediger åpner den igjen."
+  },
+  "homepage.steps.report.label": {
+    "message": "Rapporter"
+  },
+  "homepage.steps.report.title": {
+    "message": "Samme plan"
+  },
+  "homepage.steps.report.body": {
+    "message": "Kapasitet, plassering og et faktureringsgrunnlag, alt hentet fra arbeidet som allerede er gjort."
+  },
+  "homepage.pilot.title": {
+    "message": "Start med ett program, ett semester."
+  },
+  "homepage.pilot.body": {
+    "message": "Behold regnearket ved siden av. Vi setter det opp sammen med dere og måler sammen: uplasserte studenter én måned før oppstart, tid til en ferdig plan, korrigerte lister sendt til studentkoordinatorer. Ingen tall loves på forhånd."
+  },
+  "homepage.pilot.contact.title": {
+    "message": "Snakk med MOSO.AS"
+  },
+  "homepage.pilot.contact.body": {
+    "message": "Pilot for ett program og ett semester. Logg inn med Feide, SWAMID eller e-post."
   }
 }

@@ -10,8 +10,8 @@ sidebar_position: 2
 
 - **Side:** Innstillinger → Studieadministratorer
 - **Rolle:** Praksiskoordinator (PK)
-- **Mål:** Opprett en studieadministrator fra en tom tilstand, og tildel vedkommende et studium og programmene i det.
-- **Forutsetning:** Minst ett studium med programmer finnes (opprett ett først med *Testscenario 01*). Ingen studieadministratorer er definert ennå.
+- **Mål:** Opprett en studieadministrator, og tildel vedkommende et studium og programmene i det.
+- **Forutsetning:** Minst ett studium med programmer finnes (opprett ett først med *Testscenario 01*). Siden kan allerede vise andre administratorer — flyten er den samme uansett.
 
 :::
 
@@ -37,27 +37,26 @@ Etter innlogging kommer du til **Dashbord**.
 
 </figure>
 
-### 2. Åpne Innstillinger → Studieadministratorer (tom)
+### 2. Åpne Innstillinger → Studieadministratorer
 
-Klikk på **Innstillinger** i sidemenyen, og velg deretter **Studieadministratorer**. Siden er tom:
- *"Ingen studieadministratorer er lagt til ennå — klikk på «Legg til administrator» for å opprette din første administrator."*
+Klikk på **Innstillinger** i sidemenyen, og velg deretter fanen **Studieadministratorer**. Hver eksisterende administrator vises som et kort med navn, et merke for **antall programmer**, e-post, studium og programmene vedkommende forvalter, samt ikoner for redigering (blyant) og sletting (søppelbøtte).
 
 <figure>
 
-![Tom Studieadministratorer-side](./img/TS-02-study-admins/02-admins-empty.png)
+![Liste over studieadministratorer](./img/TS-02-study-admins/02-admins-list.png)
 
-<figcaption>Studieadministratorer — tom starttilstand</figcaption>
+<figcaption>Studieadministratorer — starttilstand med én eksisterende administrator</figcaption>
 
 </figure>
 
 ### 3. Legg til en administrator
 
-Klikk på **Legg til administrator** (øverst til høyre) og fyll ut skjemaet:
+Klikk på **Legg til administrator** (øverst til høyre). Et skjema åpnes øverst i listen:
 
-1.  Skriv inn administratorens **name** (navn) — her `Anne Larsen`.
-2.  Skriv inn administratorens **email** (e-post) — her `anne.larsen@moso.no`.
-3.  Velg et **studium** fra nedtrekksmenyen (f.eks. *Helse-, sosial og idrettsfag*).
-4.  Kryss av for de **programmer** denne administratoren skal forvalte — her **Nursing** og **Physiotherapy**.
+1.  Skriv inn administratorens **navn** (*"Skriv inn administratornavn (f.eks. Anne Larsen)"*) — her `Anne Larsen`.
+2.  Skriv inn administratorens **e-post** (*"Skriv inn administratorens e-post (f.eks. anne.larsen@example.com)"*) — her `anne.larsen@example.com`.
+3.  Velg et studium fra nedtrekksmenyen **Velg et studium** — her *Hälsovetenskap*.
+4.  Når et studium er valgt, vises listen *"Velg programmer for denne administratoren:"* med programmene i studiet. Kryss av for programmene administratoren skal forvalte — her **Sjuksköterskeprogrammet** og **Fysioterapeutprogrammet**.
 5.  Klikk på **Legg til**.
 
 <figure>
@@ -72,7 +71,7 @@ Klikk på **Legg til administrator** (øverst til høyre) og fyll ut skjemaet:
 
 ## Sluttresultat
 
-Den nye administratoren vises i listen med et merke for **antall programmer**, e-postadressen, studiet og
+Den nye administratoren vises nederst i listen med merket **2 programmer**, e-postadressen, studiet og
  programmene vedkommende forvalter.
 
 <figure>
@@ -83,9 +82,37 @@ Den nye administratoren vises i listen med et merke for **antall programmer**, e
 
 </figure>
 
+## Redigere en administrator (valgfritt)
+
+Klikk på **blyantikonet** på et administratorkort. Kortet blir til et redigeringsskjema der du kan endre
+ **navn**, **studium** og avkryssede **programmer**. E-postadressen kan ikke endres her. Klikk på **Lagre**
+ for å bruke endringene eller **Avbryt** for å forkaste dem.
+
+<figure>
+
+![Redigeringsskjema for administrator](./img/TS-02-study-admins/05-edit-admin.png)
+
+<figcaption>Rediger administrator — navn, studium og programmer</figcaption>
+
+</figure>
+
+## Slette en administrator (valgfritt)
+
+Klikk på **søppelbøtteikonet** på et administratorkort. En bekreftelsesdialog åpnes: *"Slette
+ studieadministrator? Administratoren «Anne Larsen» blir slettet permanent."* Klikk på **Slett** for å
+ bekrefte eller **Avbryt** for å beholde administratoren.
+
+<figure>
+
+![Bekreftelse på sletting av studieadministrator](./img/TS-02-study-admins/06-delete-confirm.png)
+
+<figcaption>Slette studieadministrator — bekreftelsesdialog</figcaption>
+
+</figure>
+
 ## Merknader
 
--   **Studieadministratorer kan bare se data for de valgte studiene**
+-   **Studieadministratoren kan bare se data for valgte studier**
 
 ---
 

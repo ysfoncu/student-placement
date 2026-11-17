@@ -1,7 +1,6 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageValues from '@site/src/components/HomepageValues';
 import HomepageAbout from '@site/src/components/HomepageAbout';
@@ -11,22 +10,29 @@ import Translate, {translate} from '@docusaurus/Translate';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          <Translate id="homepage.header.headline">
+            Practice placement, organized from start to finish.
+          </Translate>
         </Heading>
         <p className="hero__subtitle">
-          <Translate id="homepage.header.subtitle">
-            Step-by-step walkthroughs for every Student Placement task
+          <strong>
+            <Translate id="homepage.header.leadHighlight">
+              From the first student to the final report.
+            </Translate>
+          </strong>{' '}
+          <Translate id="homepage.header.lead">
+            Students, placement sites, priorities, plans and costs in one
+            overview. Nothing rests on one person.
           </Translate>
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/settings/TS-01-studies-and-programs">
+            to="/docs/TS-00-dashboard">
             <Translate id="homepage.header.tutorialsButton">
               Tutorials
             </Translate>
@@ -38,24 +44,23 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={translate(
         {
           id: 'homepage.layout.title',
-          message: 'Hello from {siteTitle}',
+          message: 'Practice placement, organized',
         },
-        {siteTitle: siteConfig.title},
       )}
       description={translate({
         id: 'homepage.layout.description',
-        message: 'Description will go into a meta tag in <head />',
+        message:
+          'Students, placement sites, priorities, plans and costs in one overview — from the first student to the final report.',
       })}>
       <HomepageHeader />
       <main>
-        <HomepageValues />
         <HomepageAbout />
+        <HomepageValues />
       </main>
     </Layout>
   );

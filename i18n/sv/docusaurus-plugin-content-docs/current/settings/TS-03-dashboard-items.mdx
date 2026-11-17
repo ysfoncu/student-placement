@@ -1,10 +1,10 @@
 ---
-title: '03 · Inställningar - Dashboardelement'
-sidebar_label: '03 · Inställningar - Dashboardelement'
+title: '03 · Inställningar - Instrumentpanelselement'
+sidebar_label: '03 · Inställningar - Instrumentpanelselement'
 sidebar_position: 3
 ---
 
-# Testscenario 03 — Inställningar - Dashboardelement
+# Testscenario 03 — Inställningar - Instrumentpanelselement
 
 :::info[Scenarioöversikt]
 
@@ -16,9 +16,11 @@ sidebar_position: 3
 
 ## Vad den här sidan är
 
-**Instrumentpanelselement** (under Inställningar) styr vilka widgetar som visas på din Instrumentpanelen
- (Placeringsöversikt, Kvotförfrågningar, Uppgifter, Senaste aktiviteter m.fl.). Att växla ett element träder i kraft
- **omedelbart** — det finns ingen separat sparning. Minst ett element måste förbli valt.
+**Instrumentpanelselement** (under Inställningar) styr vilka widgetar som visas på din Instrumentpanel.
+ Det finns sex element: **Översikt över praktikplatser**, **Placeringsöversikt**, **Uppgifter**,
+ **Senaste aktiviteter**, **Placeringsförlopp** och **Årlig placeringsöversikt**. Korten i
+ **Studentöversikt** högst upp på Instrumentpanelen visas alltid. Att slå på eller av ett element träder i
+ kraft **omedelbart** — det finns ingen separat sparning. Minst ett element måste förbli påslaget.
 
 ---
 
@@ -26,68 +28,78 @@ sidebar_position: 3
 
 ### 1. Börja på Instrumentpanelen
 
-Notera vilka widgetar som visas just nu — däribland widgeten **Kvotförfrågningar**.
+Notera vilka widgetar som visas just nu — bland annat widgeten **Uppgifter**.
 
 <figure>
 
-![Instrumentpanelen före — Kvotförfrågningar synlig](./img/TS-03-dashboard-items/01-dashboard-before.png)
+![Instrumentpanel före — Uppgifter synlig](./img/TS-03-dashboard-items/01-dashboard-before.png)
 
-<figcaption>Instrumentpanelen före — widgeten Kvotförfrågningar är synlig</figcaption>
+<figcaption>Instrumentpanel före — widgeten Uppgifter är synlig</figcaption>
 
 </figure>
 
 ### 2. Öppna Inställningar → Instrumentpanelselement
 
-Klicka på **Inställningar** i sidofältet och sedan på **Instrumentpanelselement**. Varje widget är ett kort med en
- kryssruta och en ögonikon; rubriken visar hur många av elementen som är valda.
+Klicka på **Inställningar** i sidofältet och sedan på **Instrumentpanelselement**. Elementen visas i en
+ numrerad tabell med en kort beskrivning och ett **På/Av**-reglage i kolumnen **Status**. Ovanför tabellen
+ visar en räknare hur många element som är påslagna (t.ex. *6 av 6 element valda*).
 
 <figure>
 
-![Standardval för Instrumentpanelselement](./img/TS-03-dashboard-items/02-dashboard-items.png)
+![Instrumentpanelselement — alla element på](./img/TS-03-dashboard-items/02-dashboard-items.png)
 
-<figcaption>Instrumentpanelselement — aktuellt urval</figcaption>
+<figcaption>Instrumentpanelselement — nuvarande urval</figcaption>
 
 </figure>
 
 ### 3. Stäng av ett element
 
-Klicka på kryssrutan för **Kvotförfrågningar** för att avmarkera den. Kortet blir grått, ikonen ändras till
- **dold** (överstruket öga) och antalet minskar (t.ex. *5 of 7 items selected*). Ändringen sparas direkt.
+Klicka på reglaget för **Uppgifter**. Statusen ändras till **Av**, räknaren sjunker till *5 av 6 element
+ valda* och bekräftelsen *"Inställningarna för instrumentpanelen har sparats"* visas. Ändringen sparas
+ direkt.
 
 <figure>
 
-![Kvotförfrågningar avstängd](./img/TS-03-dashboard-items/03-item-toggled-off.png)
+![Uppgifter avstängd](./img/TS-03-dashboard-items/03-item-toggled-off.png)
 
-<figcaption>Kvotförfrågningar avmarkerad — nu dold</figcaption>
+<figcaption>Uppgifter avstängd — 5 av 6 element valda</figcaption>
 
 </figure>
 
 ### 4. Bekräfta på Instrumentpanelen
 
-Gå tillbaka till **Instrumentpanelen** — widgeten **Kvotförfrågningar** visas inte längre.
+Gå tillbaka till **Instrumentpanelen** — widgeten **Uppgifter** visas inte längre.
 
 <figure>
 
-![Instrumentpanelen efter — Kvotförfrågningar dold](./img/TS-03-dashboard-items/04-dashboard-after.png)
+![Instrumentpanel efter — Uppgifter dold](./img/TS-03-dashboard-items/04-dashboard-after.png)
 
-<figcaption>Instrumentpanelen efter — widgeten Kvotförfrågningar är borta</figcaption>
+<figcaption>Instrumentpanel efter — widgeten Uppgifter är borta</figcaption>
 
 </figure>
+
+För att visa den igen slår du på **Uppgifter** under Inställningar → Instrumentpanelselement.
 
 ---
 
 ## Validering — minst ett element
 
-Du kan inte dölja alla widgetar. Om endast ett element är valt blockeras försök att avmarkera det
+Du kan inte dölja alla widgetar. När bara ett element är påslaget blockeras försöket att stänga av det,
  och ett rött meddelande visas: *"Du måste välja minst ett instrumentpanelselement att visa."*
 
 <figure>
 
-![Valideringsfel om minst ett element](./img/TS-03-dashboard-items/05-validation.png)
+![Validering — minst ett element](./img/TS-03-dashboard-items/05-validation.png)
 
-<figcaption>Att avmarkera det sista elementet blockeras</figcaption>
+<figcaption>Det sista elementet kan inte stängas av</figcaption>
 
 </figure>
+
+## Tips — visningsinställningar för widgetar
+
+De flesta widgetar på Instrumentpanelen har en egen **kugghjulsikon**. Den öppnar **Visningsinställningar**
+ för widgeten — till exempel hur många poster som ska visas (widgeten **Uppgifter** erbjuder *3*, *5* eller
+ *10 uppgifter*). Den döljer inte widgeten; använd Instrumentpanelselement för det.
 
 ---
 

@@ -1,73 +1,152 @@
 ---
-title: '12 · Prioriteringar - Skapa ny prioriteringslista'
-sidebar_label: '12 · Prioriteringar - Skapa ny prioriteringslista'
+title: '12 · Prioriteringar - Skapa en prioriteringslista'
+sidebar_label: '12 · Prioriteringar - Skapa en prioriteringslista'
 sidebar_position: 12
 ---
 
-# Prioriteringar - Skapa ny prioriteringslista
+# Testscenario 12 — Prioriteringar - Skapa en prioriteringslista
 
 :::info[Scenarioöversikt]
 
-- **Sida:** Prioriteringar
+- **Sida:** Prioriteringar → Ny prioriteringslista
 - **Roll:** Placeringskoordinator (PK)
-- **Mål:** Skapa en ny prioriteringsperiod för en termin/program, och ställ in dess första avisering, deadline och meddelande till studenterna.
-- **Förutsättning:** Inloggad som PK. Sidan kan redan lista andra prioriteringsperioder — flödet är detsamma ändå.
+- **Mål:** Skapa en prioriteringslista för ett emne så att studenterna kan ansöka om prioriterad placering — och lära känna sidan Prioriteringar.
+- **Förutsättning:** Inloggad som PK. Studenter för emnet finns i *Praksis-studenter* (se *Testscenario 06*). Den här genomgången använder **Hälsovetenskap → Fysioterapeutprogrammet → Fysioterapi - professionell utveckling och verksamhetsförlagd utbildning** (4 studenter).
 
 :::
 
 ## Vad den här sidan är
 
-**Prioriteringar** hanterar prioriteringsansökningar för kommande klinisk placering: för en given termin och program kan behöriga studenter bjudas in att skicka in en prioriteringsförfrågan (särskilda omständigheter som medicinska skäl eller barnomsorg som bör vägas in i var de placeras). Varje rad i tabellen är en **prioriteringsperiod** — en kombination av termin/program/emne — som visar dess studenter, inskickade förfrågningar (skickat / ej skickat / godkänt / avslaget / väntande), datum för första avisering, deadline, publiceringsstatus och öppet/stängt-läge. Allt börjar med att klicka på **Skapa ny prioritetslista**.
+**Prioriteringar** — *hantera prioriteringsansökningar för kommande praktik* — är där studenterna kan be om att
+ bli prioriterade vid placeringen. Varje **prioriteringslista** hör till en studie, ett program och ett emne.
+ Studenterna kommer från **Praksis-studenter**, och perioden följer deras praktikdatum.
+
+### Verktygsfält
+
+| Kontroll | Vad den gör |
+|---|---|
+| **Skapa ny prioriteringslista** | Startar en ny lista (2 steg). |
+| **Sök** (förstoringsglas) | Söker bland listorna. |
+| **Alla program** / **Alla emnen** / **Alla orter** | Begränsar listan. |
+| **Period** | Väljer vilka tidsperioder som visas; de aktiva visas som brickor under **Visar:** (standard *This Semester* och *Next Semester*). |
+| **Prioriteringsposter** | Tre räknare — **Studenter inte tillagda**, **Behöver granskas**, **Inte publicerade**. Klicka på en för att bara visa de listorna; **Rensa filter** återställer. |
+
+### Kolumner
+
+| Kolumn | Innehåll |
+|---|---|
+| **Termin** | t.ex. *Autumn 2026*. |
+| **Studie / Program** | Studien och programmet. |
+| **Emne** | Listans emne. |
+| **Studieort** | Studenternas ort (t.ex. *Umeå*). |
+| **Studenter** | Antal studenter på listan. |
+| **Ansökningar** | *skickade / inte skickade / godkända / avslagna / väntande*. |
+| **Första avisering** | När studenterna får besked — klicka för att ändra datumet. |
+| **Sista dag** | När ansökningarna ska vara inne — klicka för att ändra datumet. |
+| **Publicerad** | Om besluten är publicerade till studenterna (*—* om inte ännu). |
+| **Status** | t.ex. **Öppen**. |
+| **Åtgärd** | Papperskorgsikon för att ta bort listan. |
 
 ---
 
 ## Steg
 
-### 1. Starta på Instrumentpanelen
+### 1. Öppna Prioriteringar
 
-Efter inloggning kommer du till **Instrumentpanelen**.
+Klicka på **Prioriteringar** i sidofältet. Om ingen lista finns ännu säger sidan att inga prioriteringsperioder
+ har skapats och att du kan börja med **Skapa ny prioriteringslista**.
 
 <figure>
 
-![Instrumentpanelen — startpunkt](./img/TS-12-priorities-create-list/01-dashboard.png)
+![Prioriteringar — inga listor ännu](./img/TS-12-priorities-create-list/01-empty.png)
 
-<figcaption>Startpunkt — Instrumentpanelen</figcaption>
+<figcaption>Prioriteringar — tom, med Skapa ny prioriteringslista uppe till höger</figcaption>
 
 </figure>
 
-### 2. Öppna Prioriteringar
+### 2. Steg 1 av 2 — välj studie, program och emne
 
-Klicka på **Prioriteringar** i sidofältet. Sidan listar befintliga prioriteringsperioder som en tabell, med **Skapa ny prioritetslista** uppe till höger.
+Klicka på **Skapa ny prioriteringslista**. Sidan **Ny prioriteringslista** öppnas i **1/2 Välj studie, program
+ och emne**. Informationsrutan förklarar att du anger vilka studenter listan gäller och att studenterna kommer
+ från Praksis-studenter. Stäng den med **Uppfattat**.
 
 <figure>
 
-![Prioriteringar-översikt före att en ny lista skapas](./img/TS-12-priorities-create-list/02-priorities-overview.png)
+![Ny prioriteringslista — steg 1](./img/TS-12-priorities-create-list/02-step1.png)
 
-<figcaption>Prioriteringar — befintliga perioder, innan en ny skapas</figcaption>
+<figcaption>Steg 1 av 2 — uppgifter för prioriteringslistan</figcaption>
 
 </figure>
 
-### 3. Skapa ansökningsperiod — Detaljer
-
-Klicka på **Skapa ny prioritetslista**. Dialogen öppnas på steg **1 · Detaljer**. Välj **År**, **Termin** (Höst/Vår), och ett **Program** (en utplattad Studie / program-lista) — här `Helse-, sosial og idrettsfag / Bachelor fysioterapi`. Om programmet har emner, välj minst ett — här `FY101`. **Studieorter** är valfritt (lämna tomt för att inkludera alla). En löpande räknare visar *"N behöriga studenter med nuvarande urval"* allteftersom du avgränsar kriterierna.
+Välj **Studie** `Hälsovetenskap`, **Studieprogram** `Fysioterapeutprogrammet` och **Emne** `Fysioterapi -
+ professionell utveckling och verksamhetsförlagd utbildning`. **Ort** (valfritt) står kvar på *Alla orter* — med
+ en ort läggs bara studenterna som studerar där till på listan. Formuläret visar nu att 4 studenter i
+ Praksis-studenter läggs till automatiskt och att perioden är *Autumn 2026*, utifrån deras praktikstartdatum.
+ Klicka på **Fortsätt**.
 
 <figure>
 
-![Skapa ansökningsperiod — Detaljer-steget ifyllt](./img/TS-12-priorities-create-list/03-create-step1-details.png)
+![Steg 1 ifyllt](./img/TS-12-priorities-create-list/03-step1-filled.png)
 
-<figcaption>Steg 1 · Detaljer — år, termin, program, emne och antal behöriga studenter</figcaption>
+<figcaption>4 studenter läggs till automatiskt — period Autumn 2026</figcaption>
 
 </figure>
 
-### 4. Skapa ansökningsperiod — First notice
+:::note[Inga studenter?]
 
-Klicka på **Nästa** för att komma till steg **2 · First notice**. Ställ in det (valfria) **Datum för avisering av studenter** — när studenterna får e-post om att ansöka — och den (valfria) **Sista ansökningsdag**, samt **Meddelande till studenter** (förifylld med en rimlig standardtext, redigerbar). Klicka på **Skapa period**.
+Om inga studenter för emnet finns i Praksis-studenter säger formuläret att inga studenter väntar och att du
+ först måste importera studenter i Praksis-studenter; **Fortsätt** förblir inaktiverad.
+
+:::
+
+### 3. Steg 2 av 2 — prioriteringsuppgifter
+
+I **2/2 Prioriteringsuppgifter** anger du när de 4 studenterna aviseras, när ansökningarna ska vara inne och
+ vad de får för besked:
+
+- **Datum för avisering av studenter** (valfritt) — välj ett datum i kalendern, här **20 nov. 2026**. Datum
+  bakåt i tiden kan inte väljas.
+- **Sista ansökningsdag** (valfritt) — här **30 nov. 2026**. Den måste vara efter aviseringsdatumet.
+- **Meddelande till studenterna** * — förifyllt med en standardtext om att studenterna nu kan ansöka om
+  prioriterad placering och måste slutföra ansökan före sista dag. Ändra vid behov.
+
+Båda datumen kan även sättas senare. **Tillbaka** går till steg 1. Klicka på **Skapa prioriteringslista**.
 
 <figure>
 
-![Skapa ansökningsperiod — First notice-steget ifyllt](./img/TS-12-priorities-create-list/04-create-step2-first-notice.png)
+![Steg 2 — prioriteringsuppgifter](./img/TS-12-priorities-create-list/04-step2.png)
 
-<figcaption>Steg 2 · First notice — aviseringsdatum, deadline och meddelande till studenterna</figcaption>
+<figcaption>Steg 2 av 2 — datum och meddelande till studenterna</figcaption>
+
+</figure>
+
+### 4. Den nya prioriteringslistan
+
+Meddelandet *ansökningsperiod skapad* visas och listan öppnas: **Autumn 2026 · Hälsovetenskap ·
+ Fysioterapeutprogrammet · Umeå**, *Första avisering: 2026-11-20*, *Sista dag: 2026-11-30*, *Publicerad: inte
+ publicerad till studenterna*, status **Öppen**, och tabellen **Studenter (4)** med kolumnerna *Student,
+ Aviserad, Ansökan skickad, Poäng, Status, Dokument, Åtgärd*. **Publicera beslut** är inaktiverad — beslut kan
+ publiceras efter datumet för första avisering.
+
+<figure>
+
+![Prioriteringslista skapad](./img/TS-12-priorities-create-list/05-created.png)
+
+<figcaption>Den nya prioriteringslistan — 4 studenter, inte publicerad ännu</figcaption>
+
+</figure>
+
+### 5. Tillbaka på sidan Prioriteringar
+
+Klicka på **Prioriteringar** (uppe till vänster) för att gå tillbaka. Den nya listan visas som en rad:
+ *Autumn 2026 · Hälsovetenskap / Fysioterapeutprogrammet · Fysioterapi - professionell … · Umeå · 4 studenter ·
+ ansökningar 0 / 4 / 0 / 0 / 0 · Första avisering 2026-11-20 · Sista dag 2026-11-30 · Öppen*.
+
+<figure>
+
+![Prioriteringar med den nya listan](./img/TS-12-priorities-create-list/06-list.png)
+
+<figcaption>Sidan Prioriteringar med den nya listan</figcaption>
 
 </figure>
 
@@ -75,15 +154,12 @@ Klicka på **Nästa** för att komma till steg **2 · First notice**. Ställ in 
 
 ## Slutresultat
 
-Den nya perioden visas överst i Prioriteringar-tabellen — här **Höst 2026 / Bachelor fysioterapi / FY101** — med en gul **Importera studenter**-märkning i Studenter-kolumnen (inga studenter importerade ännu), avisering och deadline nyligen inställda, och status **Öppna**. Härifrån importerar koordinatorn studenter och går vidare till att samla in och publicera förfrågningar (se nästa scenario).
+Det finns en prioriteringslista för emnet, med de 4 studenterna, ett datum för första avisering, en sista
+ ansökningsdag och ett meddelande till studenterna. Den är öppen och inte publicerad ännu.
 
-<figure>
+## Anteckningar
 
-![Ny prioriteringsperiod visas i tabellen](./img/TS-12-priorities-create-list/05-created-result.png)
-
-<figcaption>Ny prioriteringsperiod skapad — Höst 2026 / Bachelor fysioterapi, väntar på studenter</figcaption>
-
-</figure>
+-   Insamling av ansökningar och publicering av beslut beskrivs i *Testscenario 13*.
 
 ---
 

@@ -1,125 +1,162 @@
 ---
-title: '13 · Prioriteringer - Samle inn og publisere'
-sidebar_label: '13 · Prioriteringer - Samle inn og publisere'
+title: '13 · Prioriteringer - Vurder og publiser vedtak'
+sidebar_label: '13 · Prioriteringer - Vurder og publiser'
 sidebar_position: 13
 ---
 
-# Prioriteringer - Samle inn og publisere
+# Testscenario 13 — Prioriteringer - Vurder og publiser vedtak
 
 :::info[Scenariooversikt]
 
-- **Side:** Prioriteringer → *(en prioriteringsperiode)*
+- **Side:** Prioriteringer → *prioriteringsliste*
 - **Rolle:** Praksiskoordinator (PK)
-- **Mål:** Samle inn studentenes prioriteringsforespørsler etter at det første varselet er sendt, gå gjennom og godkjenn eller avvis hver av dem, og publiser deretter beslutningene når fristen har passert.
-- **Forutsetning:** En prioriteringsperiode med studenter allerede importert. Denne gjennomgangen bruker den eksisterende perioden **Vår 2026 / Bachelor sykepleie (SP101B, SP101)**, som allerede har fått sendt sitt første varsel.
+- **Mål:** Vurdere studentenes prioriteringssøknader, godkjenne eller avslå hver av dem, og publisere vedtakene til studentene.
+- **Forutsetning:** En prioriteringsliste finnes (se *Testscenario 12*), og studentene har sendt søknader. Denne gjennomgangen bruker listen **Autumn 2026 · Hälsovetenskap · Fysioterapeutprogrammet · Umeå** med 4 innsendte søknader.
 
 :::
 
 ## Hva denne siden er
 
-Å åpne en prioriteringsperiode fra **Prioriteringer**-listen viser detaljvisningen: periodens første varsel-dato, frist og publiseringsstatus øverst, og en tabell over hver importerte student med varslet dato, innsendt dato, poeng, status og tilgjengelige handlinger. På **første varsel-dato** sender systemet en e-post til hver student i listen med en lenke for å logge inn og sende inn sin egen prioriteringsforespørsel — grunnene som gjelder for dem (medisinske, omsorg for barn, omsorgsansvar osv.), om de har førerkort, eventuelle plasseringsbegrensninger, og støttedokumenter i PDF. Når en forespørsel er sendt inn, vises den her som **Venter**, klar for koordinatoren å **Gjennomgå** og **Godkjenn** eller **Avslå**. Når alle beslutninger er tatt og fristen har passert, klikker koordinatoren på **Publiser beslutninger** — studentene får da en ny e-post med utfallet av forespørselen sin.
+Når studentene har søkt, vises det på siden **Prioriteringer**: kolonnen **Søknader** teller *sendt / ikke
+ sendt / godkjent / avslått / venter*, og tellerne **Trenger vurdering** og **Ikke publisert** går opp.
 
-For demonstrasjonsformål — siden reelle studenter normalt sender inn dette skjemaet selv — kan koordinatoren fylle det ut **på vegne av en student** ved hjelp av blyantikonet i Action-kolonnen, ved siden av et klokkeikon som sender første varsel på nytt.
+Klikk på en liste for å åpne den. Overskriften viser termin, studium · program, sted, **Første varsel**,
+ **Frist**, **Publisert** og status (**Åpen** eller **Lukket**), med **Publiser vedtak** øverst til høyre. Under
+ er tabellen **Studenter**:
+
+| Kolonne | Innhold |
+|---|---|
+| **Student** | Navn og personnummer. |
+| **Varslet** | Når studenten ble varslet. |
+| **Søknad sendt** | Dato for søknaden (*—* hvis ingen). |
+| **Poeng** | Sum prioritetspoeng for de oppgitte grunnene (f.eks. *48 pts*). |
+| **Status** | **Venter**, **Godkjent** eller **Avslått**. |
+| **Dokumenter** | Filer lagt ved søknaden. |
+| **Handling** | **Vurder** mens den venter; **Vis** når den er avgjort. |
+
+Filtrene **Alle varslet** (*Varslet / Ikke varslet*), **Alle søknader** (*Sendt / Ikke sendt*) og **Alle
+ statuser** (*Venter / Godkjent / Avslått*), søket og **Utvid** hjelper med lange lister.
 
 ---
 
 ## Trinn
 
-### 1. Start på Dashbord
+### 1. Finn listen som trenger vurdering
 
-Etter innlogging kommer du til **Dashbord**.
+Åpne **Prioriteringer**. Listen viser *4 / 0 / 0 / 0 / 4* — 4 søknader sendt, alle 4 venter — og tellerne
+ **Trenger vurdering 1** og **Ikke publisert 1**.
 
 <figure>
 
-![Dashbord — startpunkt](./img/TS-13-priorities-collect-and-publish/01-dashboard.png)
+![Prioriteringer — søknader å vurdere](./img/TS-13-priorities-collect-and-publish/01-list.png)
 
-<figcaption>Startpunkt — Dashbord</figcaption>
+<figcaption>Prioriteringer — 4 søknader sendt, 4 venter</figcaption>
 
 </figure>
 
-### 2. Åpne en prioriteringsperiode
+### 2. Åpne prioriteringslisten
 
-Klikk på **Prioriteringer** i sidemenyen, og klikk deretter på en periode-rad — her **Vår 2026**. Det første varselet var allerede sendt (**2026-07-27**), så studenttabellen viser én innsendt forespørsel (Alford Armstrong, **Venter**, 6 pts) og resten som fortsatt venter på en innsending, hver med et blyantikon (**Send inn på vegne av studenten**) og et klokkeikon (**Send første varsel på nytt**).
+Klikk på raden. Listen er **Åpen** og *ikke publisert til studentene*. Alle 4 studentene har sendt søknad
+ (*2026-11-17*); **Johan Lind** har *48 pts*, de andre *1 pts*. Hver rad viser **Venter** og knappen **Vurder**.
 
 <figure>
 
-![Prioriteringsperiodens detaljvisning med studenttabell](./img/TS-13-priorities-collect-and-publish/02-detail-overview.png)
+![Prioriteringsliste — ventende søknader](./img/TS-13-priorities-collect-and-publish/02-detail.png)
 
-<figcaption>Vår 2026 — første varsel sendt, én ventende forespørsel, resten venter på innsending</figcaption>
+<figcaption>Prioriteringslisten — 4 ventende søknader</figcaption>
 
 </figure>
 
-### 3. Fyll ut en forespørsel på vegne av en student — Søknad
+### 3. Vurder og godkjenn en søknad
 
-Klikk på blyantikonet på en student som ikke har sendt inn ennå — her **Orville Fahey**. Dialogen **Priority request on behalf of…** åpnes og viser studentens informasjon (skrivebeskyttet), og lar deg deretter huke av gjeldende **Prioriteringsårsaker** (hver med en poengverdi som summeres løpende), sette **Førerkort**, og legge til **Tilleggsinformasjon til koordinator**.
+Klikk på **Vurder** ved **Johan Lind**. Vinduet **Prioriteringssøknad** (*Venter*) viser:
+
+- studentens opplysninger — navn, personnummer, program, emne, studiested, innsendt dato;
+- **Oppgitte grunner** med poeng — her *Medical reasons 32 p* og *Sole guardian of a child under 18 years of
+  age 16 p*, **Totalt 48 p**;
+- **Annet** — f.eks. *Driver's license: No* og studentens **Notater til koordinator**;
+- **Notat (valgfritt)** for din egen kommentar.
+
+Skriv et notat — her `Medical documentation checked.` — og klikk på **Godkjenn**. Meldingen *søknad godkjent*
+ vises, og statusen blir **Godkjent**.
 
 <figure>
 
-![Send inn på vegne av — Søknad-trinnet med grunner valgt](./img/TS-13-priorities-collect-and-publish/03-behalf-step1-application.png)
+![Prioriteringssøknad — vurdering](./img/TS-13-priorities-collect-and-publish/03-review.png)
 
-<figcaption>Send inn på vegne av Orville Fahey — grunner valgt, 5 pts totalt</figcaption>
+<figcaption>Prioriteringssøknad — oppgitte grunner, poeng og knappene Godkjenn / Avslå</figcaption>
 
 </figure>
 
-### 4. Fyll ut en forespørsel på vegne av en student — Dokumenter
+### 4. Avslå en søknad
 
-Klikk på **Neste: Dokumenter** for å komme til det andre trinnet. Støttedokumenter i PDF kan legges ved her (dra-og-slipp eller klikk), eller forespørselen kan sendes inn uten noen. Klikk på **Send inn søknad**.
+Klikk på **Vurder** ved **Samuel Andersson** (*Other compelling or social reasons … 1 p*) og klikk på
+ **Avslå**. Et påkrevd felt **Begrunnelse for avslag** vises. Skriv begrunnelsen — her `No documentation of the
+ stated reason was attached.` — og klikk på **Bekreft avslag** (**Tilbake** går tilbake til vurderingen).
+ Meldingen *søknad avslått* vises, og statusen blir **Avslått**.
 
 <figure>
 
-![Send inn på vegne av — Dokumenter-trinnet](./img/TS-13-priorities-collect-and-publish/04-behalf-step2-documents.png)
+![Avslå — begrunnelse for avslag](./img/TS-13-priorities-collect-and-publish/04-reject.png)
 
-<figcaption>Dokumenter-trinnet — valgfrie PDF-vedlegg, deretter innsending</figcaption>
+<figcaption>Avslag krever en begrunnelse</figcaption>
 
 </figure>
 
-### 5. Forespørselen vises nå som Venter
+### 5. Avgjør de resterende søknadene
 
-Orville Faheys rad oppdateres umiddelbart: innsendt dato, **5 poeng**, status **Venter**, med en **Gjennomgå**-knapp i stedet for blyantikonet.
+Vurder og godkjenn **test student1** og **Elisabeth Brånalt** på samme måte. Alle søknadene er nå avgjort —
+ 3 **Godkjent**, 1 **Avslått** — og hver rad viser **Vis**.
 
 <figure>
 
-![Studenttabell etter innsending på vegne av student](./img/TS-13-priorities-collect-and-publish/05-after-behalf-submit.png)
+![Alle søknader avgjort](./img/TS-13-priorities-collect-and-publish/05-decided.png)
 
-<figcaption>Orville Faheys forespørsel sendt inn — nå Venter med en Gjennomgå-knapp</figcaption>
+<figcaption>Alle avgjort — 3 godkjent, 1 avslått</figcaption>
 
 </figure>
 
-### 6. Gjennomgå og godkjenn en forespørsel
-
-Klikk på **Gjennomgå** på en ventende forespørsel — her Alford Armstrongs. Dialogen viser studentens detaljer, oppgitte grunner med poeng og totalsum, førerkort, og eventuelle plasseringsbegrensninger, samt en valgfri **Merknad**. Klikk på **Godkjenn**.
+**Vis** åpner søknaden skrivebeskyttet, med **Vedtaksnotater** og hvem som avgjorde den og når (*Decided by
+ YAVUZ on 2026-11-17*).
 
 <figure>
 
-![Gjennomgangsdialog før godkjenning](./img/TS-13-priorities-collect-and-publish/06-review-approve.png)
+![Vis en avgjort søknad](./img/TS-13-priorities-collect-and-publish/06-view.png)
 
-<figcaption>Gjennomgår Alford Armstrongs forespørsel — 6 pts totalt, klar til godkjenning</figcaption>
+<figcaption>Vis — vedtaksnotatet og hvem som avgjorde</figcaption>
 
 </figure>
 
-### 7. Gjennomgå og avvis en forespørsel
+### 6. Publiser vedtakene
 
-Klikk på **Gjennomgå** på en annen ventende forespørsel — her Orville Faheys. Klikk på **Avslå**; et **Årsak til avslag**-felt vises og er obligatorisk. Skriv inn grunnen og klikk på **Bekreft avslag**.
+Klikk på **Publiser vedtak** (øverst til høyre). Vedtakene publiseres med en gang — meldingen *vedtak publisert*
+ vises. Listen er nå **Lukket**, *publisert 2026-11-17*, og øverst til høyre står **Vedtak publisert 2026-11-17**
+ med **Åpne for redigering**.
 
 <figure>
 
-![Gjennomgangsdialog med avvisningsgrunn fylt inn](./img/TS-13-priorities-collect-and-publish/07-review-reject.png)
+![Vedtak publisert](./img/TS-13-priorities-collect-and-publish/07-published.png)
 
-<figcaption>Avviser Orville Faheys forespørsel med en obligatorisk grunn</figcaption>
+<figcaption>Vedtak publisert — listen er lukket</figcaption>
 
 </figure>
 
-Begge beslutningene gjelder umiddelbart — Alford Armstrongs rad viser **Godkjent** og Orville Faheys viser **Avslått**, hver med en **Vis**-knapp slik at den skrivebeskyttede beslutningen kan gjennomgås senere.
+:::warning
 
-### 8. Publiser beslutninger når fristen har passert
+**Publiser vedtak** publiserer med en gang, uten bekreftelse — selv om noen søknader fortsatt **venter**.
+ Avgjør alle søknadene først. Hvis du publiserte for tidlig, klikker du på **Åpne for redigering**: listen blir
+ **Åpen** og *ikke publisert til studentene* igjen, slik at du kan vurdere resten og publisere på nytt.
 
-**Publiser beslutninger** (øverst til høyre) forblir deaktivert — hold musen over den for å se hvorfor: *"Beslutninger kan først publiseres etter at fristen for første varsel har passert."* Når fristdatoen har passert, blir knappen aktiv; å klikke på den åpner en bekreftelse som forklarer at publisering lukker perioden og sender e-post til hver student som sendte inn en forespørsel, med utfallet, og at perioden fortsatt kan **gjenåpnes for redigering** ved behov.
+:::
+
+Tilbake på **Prioriteringer** viser raden *4 / 0 / 3 / 1 / 0*, **Publisert 2026-11-17** og **Lukket**, og
+ tellerne er tilbake på 0.
 
 <figure>
 
-![Publiser beslutninger-knappen deaktivert før fristen](./img/TS-13-priorities-collect-and-publish/08-publish-gate.png)
+![Prioriteringer etter publisering](./img/TS-13-priorities-collect-and-publish/08-list-after.png)
 
-<figcaption>Publiser beslutninger — deaktivert inntil første varsel-fristen har passert</figcaption>
+<figcaption>Prioriteringer — 3 godkjent, 1 avslått, publisert og lukket</figcaption>
 
 </figure>
 
@@ -127,7 +164,13 @@ Begge beslutningene gjelder umiddelbart — Alford Armstrongs rad viser **Godkje
 
 ## Sluttresultat
 
-Studentene ble varslet på e-post på første varsel-dato, sendte inn (eller fikk sendt inn på vegne av seg selv) sine prioriteringsforespørsler, og koordinatoren gjennomgikk hver av dem — godkjente Alford Armstrong og avviste Orville Fahey med en oppgitt grunn. Når fristen passerer, varsler publisering av beslutningene hver student på e-post om utfallet.
+Alle 4 søknadene er avgjort (3 godkjent, 1 avslått), og vedtakene er publisert til studentene.
+ Prioriteringslisten er **Lukket**.
+
+## Merknader
+
+-   **Publiser vedtak** er deaktivert til datoen for første varsel.
+-   **Åpne for redigering** lar deg endre vedtak etter publisering; publiser på nytt når du er ferdig.
 
 ---
 

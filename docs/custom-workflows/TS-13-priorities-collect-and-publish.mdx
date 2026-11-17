@@ -1,125 +1,162 @@
 ---
-title: '13 · Priorities - Collecting and publishing'
-sidebar_label: '13 · Priorities - Collecting and publishing'
+title: '13 · Priorities - Review and publish decisions'
+sidebar_label: '13 · Priorities - Review and publish'
 sidebar_position: 13
 ---
 
-# Priorities - Collecting and publishing
+# Test Scenario 13 — Priorities - Review and publish decisions
 
 :::info[Scenario overview]
 
-- **Page:** Priorities → *(a priority period)*
+- **Page:** Priorities → *priority list*
 - **Role:** Placement Coordinator (PK)
-- **Goal:** Collect students' priority requests after the first notice goes out, review and approve or reject each one, then publish the decisions once the deadline has passed.
-- **Precondition:** A priority period with students already imported. This walkthrough uses the existing period **Spring 2026 / Bachelor sykepleie (SP101B, SP101)**, which already has its first notice sent.
+- **Goal:** Review the students' priority applications, approve or reject each one, and publish the decisions to the students.
+- **Precondition:** A priority list exists (see *Test Scenario 12*) and its students have submitted applications. This walkthrough uses the list **Autumn 2026 · Hälsovetenskap · Fysioterapeutprogrammet · Umeå** with 4 submitted applications.
 
 :::
 
 ## What this page is
 
-Opening a priority period from the **Priorities** list shows its detail view: the period's first-notice date, deadline and published status at the top, and a table of every imported student with their notified date, submitted date, points, status and available actions. On the **first-notice date**, the system emails every student in the list a link to log in and submit their own priority request — the reasons that apply to them (medical, childcare, caregiving, etc.), whether they have a driver's license, any placement constraints, and supporting PDF documents. Once a request is submitted it shows up here as **Pending**, ready for the coordinator to **Review** and **Approve** or **Reject**. When every decision is made and the deadline has passed, the coordinator clicks **Publish decisions** — students are emailed a second time with the outcome of their request.
+When students have applied, the **Priorities** page shows it: the **Requests** column counts *sent / not sent /
+ appr / rej / pend*, and the **Needs review** and **Not published** counters go up.
 
-For demonstration purposes — since real students normally submit this form themselves — the coordinator can fill it out **on behalf of a student** using the pencil icon in the Action column, next to a bell icon that resends the first notice.
+Click a list to open it. The header shows the term, study · program, location, **First notice**, **Deadline**,
+ **Published** and the status (**Open** or **Closed**), with **Publish decisions** in the top right. Below is the
+ **Students** table:
+
+| Column | Content |
+|---|---|
+| **Student** | Name and personnummer. |
+| **Notified** | When the student was notified. |
+| **Application submitted** | Date of the application (*—* if none). |
+| **Points** | The total priority points of the stated reasons (e.g. *48 pts*). |
+| **Status** | **Pending**, **Approved** or **Rejected**. |
+| **Documents** | Files attached to the application. |
+| **Action** | **Review** while pending; **View** once decided. |
+
+The filters **All notified** (*Notified / Not notified*), **All applications** (*Submitted / Not submitted*) and
+ **All statuses** (*Pending / Approved / Rejected*), the search and **Expand** help with long lists.
 
 ---
 
 ## Steps
 
-### 1. Start on the Dashboard
+### 1. Find the list that needs review
 
-After signing in you land on the **Dashboard**.
+Open **Priorities**. The list shows *4 / 0 / 0 / 0 / 4* — 4 applications sent, all 4 pending — and the counters
+ **Needs review 1** and **Not published 1**.
 
 <figure>
 
-![Dashboard — starting point](./img/TS-13-priorities-collect-and-publish/01-dashboard.png)
+![Priorities — applications to review](./img/TS-13-priorities-collect-and-publish/01-list.png)
 
-<figcaption>Starting point — the Dashboard</figcaption>
+<figcaption>Priorities — 4 applications sent, 4 pending</figcaption>
 
 </figure>
 
-### 2. Open a priority period
+### 2. Open the priority list
 
-Click **Priorities** in the sidebar, then click a period row — here **Spring 2026**. Its first notice was already sent (**2026-07-27**), so the student table shows one submitted request (Alford Armstrong, **Pending**, 6 pts) and the rest still awaiting a submission, each with a pencil icon (**Submit on behalf of student**) and a bell icon (**Resend first notice**).
+Click the row. The list is **Open** and *Not published to students*. All 4 students have submitted
+ (*2026-11-17*); **Johan Lind** has *48 pts*, the others *1 pts*. Every row is **Pending** with a **Review**
+ button.
 
 <figure>
 
-![Priority period detail with student table](./img/TS-13-priorities-collect-and-publish/02-detail-overview.png)
+![Priority list — pending applications](./img/TS-13-priorities-collect-and-publish/02-detail.png)
 
-<figcaption>Spring 2026 — first notice sent, one pending request, rest awaiting submission</figcaption>
+<figcaption>The priority list — 4 pending applications</figcaption>
 
 </figure>
 
-### 3. Fill a request on behalf of a student — Application
+### 3. Review and approve an application
 
-Click the pencil icon on a student who hasn't submitted yet — here **Orville Fahey**. The **Priority request on behalf of…** dialog opens showing the student's information (read-only), then lets you check the applicable **Priority reasons** (each with a point value that totals live), set **Driver's license**, and add **Additional information for coordinator**.
+Click **Review** on **Johan Lind**. The **Priority Application** window (*Pending*) shows:
+
+- the student's details — name, personal ID, programme, emne, study location, submitted date;
+- **Stated reasons** with their points — here *Medical reasons 32 p* and *Sole guardian of a child under 18 years
+  of age 16 p*, **Total 48 p**;
+- **Other** — e.g. *Driver's license: No* and the student's **Notes for coordinator**;
+- **Note (optional)** for your own comment.
+
+Type a note — here `Medical documentation checked.` — and click **Approve**. The message *"Application
+ approved"* appears and the status becomes **Approved**.
 
 <figure>
 
-![Submit on behalf — Application step with reasons selected](./img/TS-13-priorities-collect-and-publish/03-behalf-step1-application.png)
+![Priority Application — review](./img/TS-13-priorities-collect-and-publish/03-review.png)
 
-<figcaption>Submit on behalf of Orville Fahey — reasons selected, 5 pts total</figcaption>
+<figcaption>Priority Application — stated reasons, points and the Approve / Reject buttons</figcaption>
 
 </figure>
 
-### 4. Fill a request on behalf of a student — Documents
+### 4. Reject an application
 
-Click **Next: Documents** to reach the second step. Supporting PDF documents can be attached here (drag-and-drop or click), or the request can be submitted without any. Click **Submit application**.
+Click **Review** on **Samuel Andersson** (*Other compelling or social reasons … 1 p*) and click **Reject**. A
+ required field **Reason for rejection** appears. Type the reason — here `No documentation of the stated reason
+ was attached.` — and click **Confirm rejection** (**Back** returns to the review). The message *"Application
+ rejected"* appears and the status becomes **Rejected**.
 
 <figure>
 
-![Submit on behalf — Documents step](./img/TS-13-priorities-collect-and-publish/04-behalf-step2-documents.png)
+![Reject — reason for rejection](./img/TS-13-priorities-collect-and-publish/04-reject.png)
 
-<figcaption>Documents step — optional PDF attachments, then submit</figcaption>
+<figcaption>Rejecting requires a reason</figcaption>
 
 </figure>
 
-### 5. Request now shows as Pending
+### 5. Decide the remaining applications
 
-Orville Fahey's row updates immediately: submitted date, **5 pts**, status **Pending**, with a **Review** button in place of the pencil icon.
+Review and approve **test student1** and **Elisabeth Brånalt** the same way. All applications are now decided —
+ 3 **Approved**, 1 **Rejected** — and every row shows **View**.
 
 <figure>
 
-![Student table after submitting on behalf](./img/TS-13-priorities-collect-and-publish/05-after-behalf-submit.png)
+![All applications decided](./img/TS-13-priorities-collect-and-publish/05-decided.png)
 
-<figcaption>Orville Fahey's request submitted — now Pending with a Review button</figcaption>
+<figcaption>All decided — 3 approved, 1 rejected</figcaption>
 
 </figure>
 
-### 6. Review and approve a request
-
-Click **Review** on a pending request — here Alford Armstrong's. The dialog shows the student's details, stated reasons with their points and total, driver's license, and any placement constraints, plus an optional **Note**. Click **Approve**.
+**View** opens the application read-only, with the **Decision notes** and *"Decided by YAVUZ on 2026-11-17"*.
 
 <figure>
 
-![Review dialog before approving](./img/TS-13-priorities-collect-and-publish/06-review-approve.png)
+![View a decided application](./img/TS-13-priorities-collect-and-publish/06-view.png)
 
-<figcaption>Reviewing Alford Armstrong's request — 6 pts total, ready to approve</figcaption>
+<figcaption>View — the decision note and who decided</figcaption>
 
 </figure>
 
-### 7. Review and reject a request
+### 6. Publish the decisions
 
-Click **Review** on another pending request — here Orville Fahey's. Click **Reject**; a **Reason for rejection** field appears and is required. Enter the reason and click **Confirm rejection**.
+Click **Publish decisions** (top right). The decisions are published at once — the message *"Decisions
+ published"* appears. The list is now **Closed**, *Published at 2026-11-17*, and the top right shows **Decisions
+ published 2026-11-17** with **Reopen for editing**.
 
 <figure>
 
-![Review dialog with rejection reason entered](./img/TS-13-priorities-collect-and-publish/07-review-reject.png)
+![Decisions published](./img/TS-13-priorities-collect-and-publish/07-published.png)
 
-<figcaption>Rejecting Orville Fahey's request with a required reason</figcaption>
+<figcaption>Decisions published — the list is closed</figcaption>
 
 </figure>
 
-Both decisions apply immediately — Alford Armstrong's row shows **Approved** and Orville Fahey's shows **Rejected**, each with a **View** button so the read-only decision can be revisited later.
+:::warning
 
-### 8. Publish decisions once the deadline has passed
+**Publish decisions** publishes immediately, without a confirmation — even if some applications are still
+ **Pending**. Decide every application first. If you published too early, click **Reopen for editing**: the list
+ becomes **Open** and *Not published to students* again, so you can review the rest and publish again.
 
-**Publish decisions** (top right) stays disabled — hover it to see why: *"Decisions can be published only after the first-notice deadline has passed."* Once the deadline date is in the past, the button becomes active; clicking it opens a confirmation explaining that publishing closes the period and emails every student who submitted a request with their outcome, after which the period can still be **reopened for editing** if needed.
+:::
+
+Back on **Priorities**, the row shows *4 / 0 / 3 / 1 / 0*, **Published 2026-11-17** and **Closed**, and the
+ counters are back at 0.
 
 <figure>
 
-![Publish decisions button disabled before the deadline](./img/TS-13-priorities-collect-and-publish/08-publish-gate.png)
+![Priorities after publishing](./img/TS-13-priorities-collect-and-publish/08-list-after.png)
 
-<figcaption>Publish decisions — disabled until the first-notice deadline has passed</figcaption>
+<figcaption>Priorities — 3 approved, 1 rejected, published and closed</figcaption>
 
 </figure>
 
@@ -127,7 +164,14 @@ Both decisions apply immediately — Alford Armstrong's row shows **Approved** a
 
 ## Final result
 
-Students were notified by email on the first-notice date, submitted (or had submitted on their behalf) their priority requests, and the coordinator reviewed each one — approving Alford Armstrong and rejecting Orville Fahey with a stated reason. Once the deadline passes, publishing the decisions notifies every student by email of their outcome.
+All 4 applications are decided (3 approved, 1 rejected) and the decisions are published to the students. The
+ priority list is **Closed**.
+
+## Notes
+
+-   **Publish decisions** is disabled until the first-notice date (*"Decisions can be published after the first
+    notice date"*).
+-   **Reopen for editing** lets you change decisions after publishing; publish again when you are done.
 
 ---
 

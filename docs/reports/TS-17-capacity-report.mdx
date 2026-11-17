@@ -4,98 +4,101 @@ sidebar_label: '17 · Reports - Capacity report'
 sidebar_position: 17
 ---
 
-# Reports - Capacity report
+# Test Scenario 17 — Reports - Capacity report
 
 :::info[Scenario overview]
 
 - **Page:** Reports → Capacity report
 - **Role:** Placement Coordinator (PK)
-- **Goal:** Browse quota requests, select one or more to compare requested vs. approved capacity against what their linked placements actually consume, filter the list by status, and expand a selection for a full-width view.
-- **Precondition:** Signed in as PK, with quota requests in various statuses. This walkthrough uses the existing requests **Mørkheim kommune / SP101B** (Approved), **Vestmark sykehus / FY101** (Approved) and **Mørkheim kommune / SP101** (Pending).
+- **Goal:** See how many praksis places each entity offers for a study, program or emne, how many are used by placements, and how many are left.
+- **Precondition:** Signed in as PK, with entities connected to the program and emne (see *Test Scenarios 04–05*). This walkthrough uses **Fysioterapeutprogrammet** in **Autumn 2026**, where the placement from *Test Scenario 08* uses 4 places on **KLINIK-1**.
 
 :::
 
 ## What this page is
 
-**Capacity report** is the fourth entry under **Reports** in the sidebar (next to **Invoicing**, **Student rapport** and **Placement rapport**). Like Placement rapport, it's a **multi-select** master/detail view: check as many quota requests as you like on the left, and each gets its own comparison section stacked in the detail panel on the right.
+**Capacity report** (under **Reports**) opens the **Capacity planning report** — *"Praksis place capacity per
+ study, program and emne, and how many places placements use"*.
 
-The filter toolbar narrows the request list by **Study / Program** (a cascading menu), **Emne**, **Status** (Pending, Approved, Rejected, Fulfilled) and **Period**; a search box also matches by praksis place, study, program or emne. Each request card in the list shows the praksis place name, a status badge, program/emne, and its requested/approved totals, with **Select all** / **Clear all** above the list. For every checked request, the detail panel shows a header (praksis place, study/program, emne, period, status) followed by a **Request details** table — one row per entity, with **Requested**, **Approved**, **Consumed** and **Available**, plus a **Total** row — and a **Linked placement tasks** table showing which placement(s) draw on this request, with their start/end dates and total assigned students, or an empty-state message if none are linked yet. An **Expand** button in the top right of the detail panel hides the request list and toolbar so the selection can be reviewed at full width; **Collapse** restores the split view.
+- **Year and term** (top right) — choose a year (e.g. *2024–2027*) and **Spring** or **Autumn**.
+- **Tree** (left) — every study, with its programs and emner. The number next to a program or emne is how many
+  entities take it. Use *Search studies, programs, emner* to find one.
+- **Report** (right) — for the selected item, one section per emne: the header shows the program · emne,
+  the term with the number of placements for the emne, and the totals **Places**, **Used** and **Left**.
+  The table lists the entities, grouped by praksis place:
 
-By default the report is scoped to the current and next semester — so the request list only shows requests whose dates fall in that window. Use the **Period** filter to widen, change, or clear this range and bring in other requests, including past semesters.
+| Column | Content |
+|---|---|
+| **Praksis place / Entity** | The praksis place (e.g. *PRAKSIS-1*) and its entities. |
+| **Period** | How the entity's places are counted, e.g. *Yearly · resets 01-01*. |
+| **Places** | Places the entity offers for this program and emne. |
+| **Used** | Places taken by placements. |
+| **Left** | Places still free. |
+| **Used by placements** | The placements that use the entity, with the number of students in brackets — click to open the placement. |
 
 ---
 
 ## Steps
 
-### 1. Start on the Dashboard
+### 1. Open Reports → Capacity report
 
-After signing in you land on the **Dashboard**.
+Click **Reports** in the sidebar, then **Capacity report**. The tree shows the studies, programs and emner; the
+ right panel says *"Select a study, program or emne — The entities that take it and their usage are shown
+ here"*. The year is **2026** and the term **Autumn**.
 
 <figure>
 
-![Dashboard — starting point](./img/TS-17-capacity-report/01-dashboard.png)
+![Capacity planning report — nothing selected](./img/TS-17-capacity-report/01-start.png)
 
-<figcaption>Starting point — the Dashboard</figcaption>
+<figcaption>Capacity planning report — choose a study, program or emne in the tree</figcaption>
 
 </figure>
 
-### 2. Open Reports → Capacity report
+### 2. Select an emne
 
-Click **Reports** in the sidebar to expand it, then click **Capacity report**. The page opens with the filter toolbar and a checkbox list of quota requests on the left; nothing is selected yet, so the right panel prompts *"Select one or more quota requests."*
+Click the emne **Fysioterapi - professionell utveckling och verksamhetsförlagd utbildning**. The report shows
+ *Autumn 2026 · 1 placement for this emne* and the totals **Places 39 · Used 4 · Left 35**:
+
+- **PRAKSIS-1 → Avdeling 1** — 0 places.
+- **PRAKSIS-1 → KLINIK-1** — 9 places, 4 used, 5 left; used by the placement *Hälsovetenskap ·
+  Fysioterapeutprogrammet · Fysioterapi - professionell … (4)*.
+- **Test Sykehus → Kirurgi** — 30 places, none used.
+
+Click the placement name to open the placement.
 
 <figure>
 
-![Capacity report overview with the request list](./img/TS-17-capacity-report/02-capacity-report-overview.png)
+![Report for one emne](./img/TS-17-capacity-report/02-emne.png)
 
-<figcaption>Capacity report — request list and filter toolbar, nothing selected</figcaption>
+<figcaption>One emne — 39 places, 4 used by one placement on KLINIK-1</figcaption>
 
 </figure>
 
-### 3. Select one request
+### 3. Select a program
 
-Check a request in the list — here **Mørkheim kommune / SP101B**. Its section loads on the right: the header (study/program, emne **SP101B**, period, **Approved** badge) followed by **Request details** with per-entity figures and a **Total** row (200 approved, 3 consumed, 197 available), then **Linked placement tasks (1)** showing the **SP101b** placement with 3 assigned students.
+Click **Fysioterapeutprogrammet**. The report shows one section for each of its emner, stacked. Here both
+ emner show the same entities and figures — the second emne (*Fysioterapi – anatomi och fysiologi*, *0
+ placements for this emne*) also shows *Used 4* on KLINIK-1.
 
 <figure>
 
-![Single request selected showing its comparison table](./img/TS-17-capacity-report/03-single-selected.png)
+![Report for a program](./img/TS-17-capacity-report/03-program.png)
 
-<figcaption>SP101B selected — request details and linked placement task</figcaption>
+<figcaption>A program — one section per emne</figcaption>
 
 </figure>
 
-### 4. Select a second request to compare
+### 4. Search and change the term
 
-Check another request — here **Vestmark sykehus / FY101** — while SP101B stays checked. Its section is added above SP101B's in the detail panel, so both requests' capacity comparisons are visible together.
-
-<figure>
-
-![Two requests selected, sections stacked](./img/TS-17-capacity-report/04-multi-selected.png)
-
-<figcaption>FY101 and SP101B both selected — their sections stack in the detail panel</figcaption>
-
-</figure>
-
-### 5. Filter by Status
-
-Clear the selection, click the status dropdown, and choose **Pending**. The list narrows to the one matching request — **Mørkheim kommune / SP101**, requested 40 / approved 0. Selecting it shows a **Pending** badge, an **Available** of 0 (nothing approved yet), and *"No placement tasks linked to this request"* since nothing has been assigned against it. The same pattern applies to **Study / Program**, **Emne** and **Period**.
+Type in *Search studies, programs, emner* — for example `Sjuk` — to show only the matching part of the tree.
+ Use **Spring** / **Autumn** and the year menu to look at another term; entities that reset yearly show the same
+ usage in both terms of the year.
 
 <figure>
 
-![Status filter narrowed to Pending, showing the empty-state request](./img/TS-17-capacity-report/05-pending-filter.png)
+![Search in the tree](./img/TS-17-capacity-report/04-search.png)
 
-<figcaption>Status filter — Pending request with no approved capacity or linked placements yet</figcaption>
-
-</figure>
-
-### 6. Expand for a full-width view
-
-Clear the filter, select a request, then click **Expand** (top right of the detail panel). The request list and toolbar are hidden and the selected section(s) take the full width, making wide comparison tables easier to read. Click **Collapse** to return to the split view.
-
-<figure>
-
-![Expanded full-width request detail](./img/TS-17-capacity-report/06-expanded.png)
-
-<figcaption>Expanded view — SP101B's request details and linked placement task at full width</figcaption>
+<figcaption>Search — only Sjuksköterskeprogrammet and its emner are shown</figcaption>
 
 </figure>
 
@@ -103,7 +106,8 @@ Clear the filter, select a request, then click **Expand** (top right of the deta
 
 ## Final result
 
-The coordinator can check off any combination of quota requests and see requested vs. approved vs. consumed capacity side by side, along with which placements are drawing on each request — filtered down by study, program, emne, status or period, and expanded to full width for a closer look.
+The coordinator can see, for any study, program or emne and term, how many places each entity offers, how many
+ are used and by which placement, and how many are left.
 
 ---
 

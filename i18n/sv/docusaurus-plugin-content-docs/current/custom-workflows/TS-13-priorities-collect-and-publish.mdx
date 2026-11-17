@@ -1,125 +1,165 @@
 ---
-title: '13 · Prioriteringar - Samla in och publicera'
-sidebar_label: '13 · Prioriteringar - Samla in och publicera'
+title: '13 · Prioriteringar - Granska och publicera beslut'
+sidebar_label: '13 · Prioriteringar - Granska och publicera'
 sidebar_position: 13
 ---
 
-# Prioriteringar - Samla in och publicera
+# Testscenario 13 — Prioriteringar - Granska och publicera beslut
 
 :::info[Scenarioöversikt]
 
-- **Sida:** Prioriteringar → *(en prioriteringsperiod)*
+- **Sida:** Prioriteringar → *prioriteringslista*
 - **Roll:** Placeringskoordinator (PK)
-- **Mål:** Samla in studenternas prioriteringsförfrågningar efter att den första aviseringen skickats, granska och godkänn eller avslå var och en, och publicera sedan besluten när deadline har passerat.
-- **Förutsättning:** En prioriteringsperiod med studenter redan importerade. Den här genomgången använder den befintliga perioden **Vår 2026 / Bachelor sykepleie (SP101B, SP101)**, som redan har fått sin första avisering skickad.
+- **Mål:** Granska studenternas prioriteringsansökningar, godkänna eller avslå var och en och publicera besluten till studenterna.
+- **Förutsättning:** En prioriteringslista finns (se *Testscenario 12*) och studenterna har skickat in ansökningar. Den här genomgången använder listan **Autumn 2026 · Hälsovetenskap · Fysioterapeutprogrammet · Umeå** med 4 inskickade ansökningar.
 
 :::
 
 ## Vad den här sidan är
 
-Att öppna en prioriteringsperiod från **Prioriteringar**-listan visar dess detaljvy: periodens datum för första avisering, deadline och publiceringsstatus högst upp, och en tabell över varje importerad student med deras aviserade datum, inskickat datum, poäng, status och tillgängliga åtgärder. På **datumet för första avisering** skickar systemet ett e-postmeddelande till varje student i listan med en länk för att logga in och skicka in sin egen prioriteringsförfrågan — de skäl som gäller för dem (medicinska, barnomsorg, vårdansvar osv.), om de har körkort, eventuella placeringsbegränsningar, och stödjande PDF-dokument. När en förfrågan har skickats in visas den här som **Väntande**, redo för koordinatorn att **Granska** och **Godkänn** eller **Avslå**. När alla beslut är fattade och deadline har passerat klickar koordinatorn på **Publicera beslut** — studenterna får då ytterligare ett e-postmeddelande med utfallet av sin förfrågan.
+När studenterna har ansökt syns det på sidan **Prioriteringar**: kolumnen **Ansökningar** räknar *skickade /
+ inte skickade / godkända / avslagna / väntande*, och räknarna **Behöver granskas** och **Inte publicerade** går
+ upp.
 
-I demonstrationssyfte — eftersom riktiga studenter normalt skickar in det här formuläret själva — kan koordinatorn fylla i det **på en students vägnar** med pennikonen i kolumnen Action, bredvid en klockikon som skickar om den första aviseringen.
+Klicka på en lista för att öppna den. Rubriken visar termin, studie · program, ort, **Första avisering**,
+ **Sista dag**, **Publicerad** och status (**Öppen** eller **Stängd**), med **Publicera beslut** uppe till höger.
+ Nedanför finns tabellen **Studenter**:
+
+| Kolumn | Innehåll |
+|---|---|
+| **Student** | Namn och personnummer. |
+| **Aviserad** | När studenten aviserades. |
+| **Ansökan skickad** | Datum för ansökan (*—* om ingen). |
+| **Poäng** | Summan av prioritetspoängen för de angivna skälen (t.ex. *48 pts*). |
+| **Status** | **Väntande**, **Godkänd** eller **Avslagen**. |
+| **Dokument** | Filer bifogade till ansökan. |
+| **Åtgärd** | **Granska** medan den väntar; **Visa** när den är avgjord. |
+
+Filtren **Alla aviserade** (*Aviserade / Inte aviserade*), **Alla ansökningar** (*Skickade / Inte skickade*)
+ och **Alla statusar** (*Väntande / Godkända / Avslagna*), sökningen och **Expandera** hjälper vid långa listor.
 
 ---
 
 ## Steg
 
-### 1. Starta på Instrumentpanelen
+### 1. Hitta listan som behöver granskas
 
-Efter inloggning kommer du till **Instrumentpanelen**.
+Öppna **Prioriteringar**. Listan visar *4 / 0 / 0 / 0 / 4* — 4 ansökningar skickade, alla 4 väntande — och
+ räknarna **Behöver granskas 1** och **Inte publicerade 1**.
 
 <figure>
 
-![Instrumentpanelen — startpunkt](./img/TS-13-priorities-collect-and-publish/01-dashboard.png)
+![Prioriteringar — ansökningar att granska](./img/TS-13-priorities-collect-and-publish/01-list.png)
 
-<figcaption>Startpunkt — Instrumentpanelen</figcaption>
+<figcaption>Prioriteringar — 4 ansökningar skickade, 4 väntande</figcaption>
 
 </figure>
 
-### 2. Öppna en prioriteringsperiod
+### 2. Öppna prioriteringslistan
 
-Klicka på **Prioriteringar** i sidofältet, och klicka sedan på en periodrad — här **Vår 2026**. Dess första avisering hade redan skickats (**2026-07-27**), så studenttabellen visar en inskickad förfrågan (Alford Armstrong, **Väntande**, 6 pts) och resten som fortfarande väntar på en inskickning, var och en med en pennikon (**Skicka in på studentens vägnar**) och en klockikon (**Skicka första meddelandet igen**).
+Klicka på raden. Listan är **Öppen** och *inte publicerad till studenterna*. Alla 4 studenter har skickat in
+ (*2026-11-17*); **Johan Lind** har *48 pts*, de andra *1 pts*. Varje rad visar **Väntande** och knappen
+ **Granska**.
 
 <figure>
 
-![Prioriteringsperiodens detaljvy med studenttabell](./img/TS-13-priorities-collect-and-publish/02-detail-overview.png)
+![Prioriteringslista — väntande ansökningar](./img/TS-13-priorities-collect-and-publish/02-detail.png)
 
-<figcaption>Vår 2026 — första avisering skickad, en väntande förfrågan, resten väntar på inskickning</figcaption>
+<figcaption>Prioriteringslistan — 4 väntande ansökningar</figcaption>
 
 </figure>
 
-### 3. Fyll i en förfrågan på en students vägnar — Ansökan
+### 3. Granska och godkänn en ansökan
 
-Klicka på pennikonen på en student som ännu inte skickat in — här **Orville Fahey**. Dialogen **Priority request on behalf of…** öppnas och visar studentens information (skrivskyddad), och låter dig sedan kryssa för tillämpliga **Prioriteringsskäl** (var och en med ett poängvärde som summeras löpande), ställa in **Körkort**, och lägga till **Ytterligare information till koordinator**.
+Klicka på **Granska** vid **Johan Lind**. Fönstret **Prioriteringsansökan** (*Väntande*) visar:
+
+- studentens uppgifter — namn, personnummer, program, emne, studieort, inskickat datum;
+- **Angivna skäl** med poäng — här *Medical reasons 32 p* och *Sole guardian of a child under 18 years of age
+  16 p*, **Totalt 48 p**;
+- **Övrigt** — t.ex. *Driver's license: No* och studentens **Anteckningar till koordinatorn**;
+- **Anteckning (valfritt)** för din egen kommentar.
+
+Skriv en anteckning — här `Medical documentation checked.` — och klicka på **Godkänn**. Meddelandet *ansökan
+ godkänd* visas och statusen blir **Godkänd**.
 
 <figure>
 
-![Skicka in för annan — Ansökan-steget med skäl valda](./img/TS-13-priorities-collect-and-publish/03-behalf-step1-application.png)
+![Prioriteringsansökan — granskning](./img/TS-13-priorities-collect-and-publish/03-review.png)
 
-<figcaption>Skicka in på Orville Faheys vägnar — skäl valda, 5 pts totalt</figcaption>
+<figcaption>Prioriteringsansökan — angivna skäl, poäng och knapparna Godkänn / Avslå</figcaption>
 
 </figure>
 
-### 4. Fyll i en förfrågan på en students vägnar — Dokument
+### 4. Avslå en ansökan
 
-Klicka på **Nästa: Dokument** för att komma till det andra steget. Stödjande PDF-dokument kan bifogas här (dra-och-släpp eller klicka), eller så kan förfrågan skickas in utan några. Klicka på **Skicka ansökan**.
+Klicka på **Granska** vid **Samuel Andersson** (*Other compelling or social reasons … 1 p*) och klicka på
+ **Avslå**. Ett obligatoriskt fält **Skäl till avslag** visas. Skriv skälet — här `No documentation of the
+ stated reason was attached.` — och klicka på **Bekräfta avslag** (**Tillbaka** går tillbaka till granskningen).
+ Meddelandet *ansökan avslagen* visas och statusen blir **Avslagen**.
 
 <figure>
 
-![Skicka in för annan — Dokument-steget](./img/TS-13-priorities-collect-and-publish/04-behalf-step2-documents.png)
+![Avslå — skäl till avslag](./img/TS-13-priorities-collect-and-publish/04-reject.png)
 
-<figcaption>Dokument-steget — valfria PDF-bilagor, sedan inskickning</figcaption>
+<figcaption>Avslag kräver ett skäl</figcaption>
 
 </figure>
 
-### 5. Förfrågan visas nu som Väntande
+### 5. Avgör de återstående ansökningarna
 
-Orville Faheys rad uppdateras omedelbart: inskickat datum, **5 p**, status **Väntande**, med en **Granska**-knapp istället för pennikonen.
+Granska och godkänn **test student1** och **Elisabeth Brånalt** på samma sätt. Alla ansökningar är nu avgjorda
+ — 3 **Godkända**, 1 **Avslagen** — och varje rad visar **Visa**.
 
 <figure>
 
-![Studenttabell efter inskickning på studentens vägnar](./img/TS-13-priorities-collect-and-publish/05-after-behalf-submit.png)
+![Alla ansökningar avgjorda](./img/TS-13-priorities-collect-and-publish/05-decided.png)
 
-<figcaption>Orville Faheys förfrågan inskickad — nu Väntande med en Granska-knapp</figcaption>
+<figcaption>Alla avgjorda — 3 godkända, 1 avslagen</figcaption>
 
 </figure>
 
-### 6. Granska och godkänn en förfrågan
-
-Klicka på **Granska** på en väntande förfrågan — här Alford Armstrongs. Dialogen visar studentens uppgifter, angivna skäl med poäng och totalsumma, körkort, och eventuella placeringsbegränsningar, samt en valfri **Anteckning**. Klicka på **Godkänn**.
+**Visa** öppnar ansökan skrivskyddad, med **Beslutsanteckningar** och vem som avgjorde den och när (*Decided by
+ YAVUZ on 2026-11-17*).
 
 <figure>
 
-![Granskningsdialog före godkännande](./img/TS-13-priorities-collect-and-publish/06-review-approve.png)
+![Visa en avgjord ansökan](./img/TS-13-priorities-collect-and-publish/06-view.png)
 
-<figcaption>Granskar Alford Armstrongs förfrågan — 6 pts totalt, redo att godkännas</figcaption>
+<figcaption>Visa — beslutsanteckningen och vem som avgjorde</figcaption>
 
 </figure>
 
-### 7. Granska och avslå en förfrågan
+### 6. Publicera besluten
 
-Klicka på **Granska** på en annan väntande förfrågan — här Orville Faheys. Klicka på **Avslå**; ett fält för **Orsak till avslag** visas och är obligatoriskt. Ange skälet och klicka på **Bekräfta avslag**.
+Klicka på **Publicera beslut** (uppe till höger). Besluten publiceras direkt — meddelandet *beslut publicerade*
+ visas. Listan är nu **Stängd**, *publicerad 2026-11-17*, och uppe till höger står **Beslut publicerade
+ 2026-11-17** med **Öppna för redigering**.
 
 <figure>
 
-![Granskningsdialog med avslagsskäl ifyllt](./img/TS-13-priorities-collect-and-publish/07-review-reject.png)
+![Beslut publicerade](./img/TS-13-priorities-collect-and-publish/07-published.png)
 
-<figcaption>Avslår Orville Faheys förfrågan med ett obligatoriskt skäl</figcaption>
+<figcaption>Beslut publicerade — listan är stängd</figcaption>
 
 </figure>
 
-Båda besluten gäller omedelbart — Alford Armstrongs rad visar **Godkänd** och Orville Faheys visar **Avslagen**, var och en med en **Visa**-knapp så att det skrivskyddade beslutet kan granskas senare.
+:::warning
 
-### 8. Publicera beslut när deadline har passerat
+**Publicera beslut** publicerar direkt, utan bekräftelse — även om vissa ansökningar fortfarande är
+ **Väntande**. Avgör alla ansökningar först. Om du publicerade för tidigt klickar du på **Öppna för
+ redigering**: listan blir **Öppen** och *inte publicerad till studenterna* igen, så att du kan granska resten
+ och publicera på nytt.
 
-**Publicera beslut** (uppe till höger) förblir inaktiverad — håll muspekaren över den för att se varför: *"Beslut kan publiceras först efter att deadline för första meddelandet har passerat."* När deadline-datumet har passerat blir knappen aktiv; att klicka på den öppnar en bekräftelse som förklarar att publicering stänger perioden och skickar e-post till varje student som skickat in en förfrågan med utfallet, varefter perioden fortfarande kan **återöppnas för redigering** vid behov.
+:::
+
+Tillbaka på **Prioriteringar** visar raden *4 / 0 / 3 / 1 / 0*, **Publicerad 2026-11-17** och **Stängd**, och
+ räknarna är tillbaka på 0.
 
 <figure>
 
-![Publicera beslut-knappen inaktiverad före deadline](./img/TS-13-priorities-collect-and-publish/08-publish-gate.png)
+![Prioriteringar efter publicering](./img/TS-13-priorities-collect-and-publish/08-list-after.png)
 
-<figcaption>Publicera beslut — inaktiverad tills deadline för första aviseringen har passerat</figcaption>
+<figcaption>Prioriteringar — 3 godkända, 1 avslagen, publicerad och stängd</figcaption>
 
 </figure>
 
@@ -127,7 +167,13 @@ Båda besluten gäller omedelbart — Alford Armstrongs rad visar **Godkänd** o
 
 ## Slutresultat
 
-Studenterna aviserades via e-post på datumet för första avisering, skickade in (eller fick inskickat på sina vägnar) sina prioriteringsförfrågningar, och koordinatorn granskade var och en — godkände Alford Armstrong och avslog Orville Fahey med ett angivet skäl. När deadline passerar aviserar publiceringen av besluten varje student via e-post om utfallet.
+Alla 4 ansökningar är avgjorda (3 godkända, 1 avslagen) och besluten är publicerade till studenterna.
+ Prioriteringslistan är **Stängd**.
+
+## Anteckningar
+
+-   **Publicera beslut** är inaktiverad fram till datumet för första avisering.
+-   **Öppna för redigering** låter dig ändra beslut efter publicering; publicera igen när du är klar.
 
 ---
 

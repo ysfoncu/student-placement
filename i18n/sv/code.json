@@ -1,9 +1,9 @@
 {
   "homepage.layout.title": {
-    "message": "Hej från {siteTitle}"
+    "message": "Praktikplacering, organiserad"
   },
   "homepage.layout.description": {
-    "message": "Beskrivning som läggs i en meta-tagg i <head />"
+    "message": "Studenter, praktikplatser, prioriteringar, planer och kostnader i en översikt — från första student till slutrapport."
   },
   "theme.ErrorPageContent.title": {
     "message": "Denna sida har kraschat.",
@@ -383,9 +383,6 @@
   "scenarioFeedback.form.title": {
     "message": "Ange din e-postadress för att lägga till din kommentar"
   },
-  "homepage.header.subtitle": {
-    "message": "Steg-för-steg-genomgångar för varje Student plassering-uppgift"
-  },
   "homepage.header.tutorialsButton": {
     "message": "Handledningar"
   },
@@ -407,10 +404,121 @@
   "homepage.values.feedback.description": {
     "message": "Berätta vad som fungerade i slutet av varje scenario — att skicka feedback markerar det som slutfört."
   },
-  "homepage.about.title": {
-    "message": "Vad är Student plassering?"
+  "homepage.header.headline": {
+    "message": "Praktikplacering, organiserad från början till slut."
   },
-  "homepage.about.description": {
-    "message": "Student plassering hjälper universitet och högskolor att koordinera praktikplatser för sina studenter — från att sätta upp studier och program, till att begära och godkänna kvoter hos praktikplatser. Koordinatorer kan fördela studenter, samla in deras önskemål och följa allt genom fakturering, placerings- och kapacitetsrapporter."
+  "homepage.header.leadHighlight": {
+    "message": "Från första student till slutrapport."
+  },
+  "homepage.header.lead": {
+    "message": "Studenter, praktikplatser, prioriteringar, planer och kostnader i en översikt. Ingenting vilar på en person."
+  },
+  "homepage.about.problem": {
+    "message": "Vårdutbildningar placerar studenter på sjukhus och i kommunala verksamheter med kalkylblad, e-post och en koordinators minne. Det fungerar ända tills praktikkoordinatorn är sjuk, en studentkoordinator drar ner platser veckan före start, eller en student frågar varför en kurskamrat fick platsen. Det här är arbetsöversikten för de tre situationerna."
+  },
+  "homepage.about.overview.title": {
+    "message": "En översikt räcker"
+  },
+  "homepage.about.overview.unplaced": {
+    "message": "Vem som fortfarande saknar plats, per kurs"
+  },
+  "homepage.about.overview.capacity": {
+    "message": "Vad varje enhet kan ta emot, per period"
+  },
+  "homepage.about.overview.decisions": {
+    "message": "Prioriteringsbeslut, med motivering"
+  },
+  "homepage.about.overview.plan": {
+    "message": "Planen: handledare, veckor och kostnad"
+  },
+  "homepage.questions.title": {
+    "message": "Tre frågor den besvarar"
+  },
+  "homepage.questions.q1.title": {
+    "message": "Vem saknar fortfarande plats — och var tar platserna slut?"
+  },
+  "homepage.questions.q1.body": {
+    "message": "Väntande studenter per kurs, ställda mot vad varje enhet har sagt att den kan ta emot. Gapet syns medan det fortfarande finns tid att be en studentkoordinator om fler platser."
+  },
+  "homepage.questions.q1.audience": {
+    "message": "Programansvarig får svaret utan att behöva efterfråga det"
+  },
+  "homepage.questions.q2.title": {
+    "message": "En studentkoordinator drar ner platser. Vad nu?"
+  },
+  "homepage.questions.q2.body": {
+    "message": "Sänk antalet platser och se ”Over by N” med studenterna som är placerade där. Ta bort dem, placera dem där det finns plats, och ångra en felaktig placering. Den varnar, men blockerar aldrig."
+  },
+  "homepage.questions.q2.audience": {
+    "message": "För praktikkoordinatorn, samma dag det händer"
+  },
+  "homepage.questions.q3.title": {
+    "message": "Varför fick den här studenten den platsen?"
+  },
+  "homepage.questions.q3.body": {
+    "message": "Öppna ansökan, poängen, beslutet och motiveringen — inte en inkorg. Ett avslag kan inte sparas utan motivering, och besluten publiceras samlat."
+  },
+  "homepage.questions.q3.audience": {
+    "message": "Svaret beror inte på vem som är på kontoret"
+  },
+  "homepage.steps.title": {
+    "message": "En termin, en översikt"
+  },
+  "homepage.steps.setup.label": {
+    "message": "Konfigurera"
+  },
+  "homepage.steps.setup.title": {
+    "message": "Definiera en gång"
+  },
+  "homepage.steps.setup.body": {
+    "message": "Utbildningar, program och kurser. Enheter anger platser per program, kurs och period; kontakter och krav finns på enheten."
+  },
+  "homepage.steps.prioritize.label": {
+    "message": "Prioritera"
+  },
+  "homepage.steps.prioritize.title": {
+    "message": "Besluta öppet"
+  },
+  "homepage.steps.prioritize.body": {
+    "message": "En lista per kurs med avisering, sista dag och meddelande. Ansökningar har motiveringar, poäng och dokument; beslut publiceras samlat."
+  },
+  "homepage.steps.place.label": {
+    "message": "Placera"
+  },
+  "homepage.steps.place.title": {
+    "message": "Bygg planen"
+  },
+  "homepage.steps.place.body": {
+    "message": "Välj enheter och platser; placera manuellt eller ”Topp N efter poäng”; ange en handledare från enhetens egna kontakter."
+  },
+  "homepage.steps.publish.label": {
+    "message": "Publicera"
+  },
+  "homepage.steps.publish.title": {
+    "message": "Enheter först"
+  },
+  "homepage.steps.publish.body": {
+    "message": "Publicera till enheterna, sedan till studenterna. Det låser planen och registrerar steget; Redigera öppnar den igen."
+  },
+  "homepage.steps.report.label": {
+    "message": "Rapportera"
+  },
+  "homepage.steps.report.title": {
+    "message": "Samma plan"
+  },
+  "homepage.steps.report.body": {
+    "message": "Kapacitet, placering och ett faktureringsunderlag, allt hämtat från arbetet som redan är gjort."
+  },
+  "homepage.pilot.title": {
+    "message": "Börja med ett program, en termin."
+  },
+  "homepage.pilot.body": {
+    "message": "Behåll kalkylbladet vid sidan av. Vi sätter upp det tillsammans med er och mäter tillsammans: oplacerade studenter en månad före start, tid till en färdig plan, korrigerade listor skickade till studentkoordinatorer. Inga siffror utlovas i förväg."
+  },
+  "homepage.pilot.contact.title": {
+    "message": "Prata med MOSO.AS"
+  },
+  "homepage.pilot.contact.body": {
+    "message": "Pilot för ett program och en termin. Logga in med Feide, SWAMID eller e-post."
   }
 }
